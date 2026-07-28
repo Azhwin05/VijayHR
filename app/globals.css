@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+:root {
+  /* Warm paper base — never pure #fff, this alone removes the "default" look */
+  --paper: #fdfcfa;
+  --ink: #16161a;
+  --muted: #6e6e68;
+  --hairline: #e7e2d9;
+
+  /* Neutral group identity (deep slate) */
+  --accent: #2a3340;
+  --accent-rgb: 42, 51, 64;
+
+  /* Section tints — high lightness, low saturation. One family per brand. */
+  --tint-1: #f5f2ec;
+  --tint-2: #eef1f4;
+  --tint-3: #f1f2ee;
+
+  /* Secondary micro-accent, credentials & seals only */
+  --brass: #a8763e;
+}
+
+/* ComplyCare — oxblood, warm sand family */
+.brand-complycare {
+  --accent: #7a2331;
+  --accent-rgb: 122, 35, 49;
+  --tint-1: #f7f1e7; /* sand   */
+  --tint-2: #faf0ed; /* blush  */
+  --tint-3: #f1f2ee; /* stone  */
+}
+
+/* PeopleCare — moss, cool-warm sage family */
+.brand-peoplecare {
+  --accent: #4b5a34;
+  --accent-rgb: 75, 90, 52;
+  --tint-1: #eff3e8; /* sage  */
+  --tint-2: #faf6eb; /* cream */
+  --tint-3: #edf2ef; /* mist  */
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-bg: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-hairline: var(--hairline);
+  --color-accent: var(--accent);
+  --color-brass: var(--brass);
+  --color-tint-1: var(--tint-1);
+  --color-tint-2: var(--tint-2);
+  --color-tint-3: var(--tint-3);
+  --font-sans: var(--font-satoshi);
+  --font-display: var(--font-satoshi);
+  --font-editorial: var(--font-instrument);
+}
+
+html {
+  background: var(--paper);
+  color-scheme: light;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-feature-settings: "ss01", "cv01";
+}
+
+/* ------------------------------------------------------------------
+   Type ramp. Tracking tightens as size grows — the single biggest
+   lever that separates designed type from framework-default type.
+   ------------------------------------------------------------------ */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-satoshi), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.032em;
+  line-height: 1.12;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.042em;
+  line-height: 1.04;
+}
+
+h2 {
+  letter-spacing: -0.036em;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.018em;
+}
+
+p {
+  letter-spacing: -0.006em;
+}
+
+/* Editorial accent — used sparingly for emphasis lines and pull quotes */
+.editorial {
+  font-family: var(--font-instrument), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(var(--accent-rgb), 0.16);
+  color: var(--ink);
+}
+
+/* Scroll-reveal primitives (GSAP drives the end state) */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.rule {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+/* The one accent-derived gradient permitted per page */
+.accent-band {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 88%, black 12%) 0%,
+    var(--accent) 55%,
+    color-mix(in srgb, var(--accent) 82%, white 18%) 100%
+  );
+}
+
+/* Section tint surfaces */
+.surface-1 {
+  background: var(--tint-1);
+}
+.surface-2 {
+  background: var(--tint-2);
+}
+.surface-3 {
+  background: var(--tint-3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .rule {
+    transform: scaleX(1);
+  }
+}
