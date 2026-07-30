@@ -46,9 +46,6 @@ export default function ServicesGrid({
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                 />
-                <span className="editorial absolute bottom-3 right-4 text-[26px] leading-none text-white/85 [text-shadow:0_1px_6px_rgba(0,0,0,0.35)]">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
               </div>
             )}
 
