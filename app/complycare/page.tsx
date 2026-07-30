@@ -17,17 +17,17 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll" },
-  { name: "Labour Law & Statutory Compliance", tagline: "Every applicable central and state obligation — tracked, filed and audit-ready.", href: "/complycare/services/labour-law" },
-  { name: "Compliance Audits", tagline: "An independent, risk-classified view of where you truly stand.", href: "/complycare/services/audits" },
-  { name: "Assessments & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory" },
-  { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems" },
-  { name: "Representation & Liaison", tagline: "When an inspector or notice arrives, you're not facing it alone.", href: "/complycare/services/representation" },
-  { name: "Compliance Training & Capacity Building", tagline: "Build the in-house capability your HR, Admin and Ops teams need.", href: "/complycare/services/training" },
-  { name: "Factory Compliance", tagline: "Specialist Factories Act support for manufacturing operations.", href: "/complycare/services/factory" },
-  { name: "Multi-Sector Labour Law", tagline: "Shops, CLRA, BOCW, Mines and more — registrations through ongoing filings.", href: "/complycare/services/multi-sector" },
-  { name: "Environmental & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs" },
-  { name: "Vendor Compliance & Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor" },
+  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
+  { name: "Labour Law & Statutory Compliance", tagline: "Every applicable central and state obligation — tracked, filed and audit-ready.", href: "/complycare/services/labour-law", image: "/services/labour-law-v2.webp" },
+  { name: "Compliance Audits", tagline: "An independent, risk-classified view of where you truly stand.", href: "/complycare/services/audits", image: "/services/audits-v2.webp" },
+  { name: "Assessments & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory", image: "/services/advisory-v2.webp" },
+  { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems", image: "/services/systems-v2.webp" },
+  { name: "Representation & Liaison", tagline: "When an inspector or notice arrives, you're not facing it alone.", href: "/complycare/services/representation", image: "/services/representation-v2.webp" },
+  { name: "Compliance Training & Capacity Building", tagline: "Build the in-house capability your HR, Admin and Ops teams need.", href: "/complycare/services/training", image: "/services/training-v2.webp" },
+  { name: "Factory Compliance", tagline: "Specialist Factories Act support for manufacturing operations.", href: "/complycare/services/factory", image: "/services/factory-v2.webp" },
+  { name: "Multi-Sector Labour Law", tagline: "Shops, CLRA, BOCW, Mines and more — registrations through ongoing filings.", href: "/complycare/services/multi-sector", image: "/services/multi-sector-v2.webp" },
+  { name: "Environmental & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
+  { name: "Vendor Compliance & Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
 ];
 
 export default function ComplyCareHome() {

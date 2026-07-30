@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type FooterColumn = { title: string; links: { label: string; href: string }[] };
 
 export default function Footer({
@@ -18,11 +20,15 @@ export default function Footer({
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
             <div className="flex items-center gap-3">
-              <span
-                aria-hidden
-                className="h-6 w-[3px] rounded-full"
-                style={{ backgroundColor: "var(--accent)" }}
-              />
+              <span className="relative h-7 w-[62px] shrink-0">
+                <Image
+                  src="/brand/vhr-mark.png"
+                  alt="VijayHR"
+                  fill
+                  sizes="62px"
+                  className="object-contain object-left"
+                />
+              </span>
               <span className="text-[16px] font-bold tracking-[-0.03em] text-ink">
                 {brand}
               </span>
