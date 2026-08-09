@@ -32,9 +32,9 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Vijay Associates Group — Payroll Compliance & HR Partners",
+  title: "Vijay Associates Group — Compliance, Payroll & HR Partners",
   description:
-    "The Vijay Associates Group: VijayHR ComplyCare for pan-India payroll & labour-law compliance, and VijayHR PeopleCare for HR partners on demand.",
+    "The Vijay Associates Group: VijayHR ComplyCare for pan-India labour-law compliance & payroll, and VijayHR PeopleCare for HR partners on demand.",
 };
 
 export default function RootLayout({

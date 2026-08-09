@@ -170,7 +170,7 @@ export default function SolutionsIndex() {
             <Rule />
             <div className="mt-6 flex flex-col">
               {[
-                { title: "Payroll & statutory compliance", text: "Handled by VijayHR ComplyCare." },
+                { title: "Statutory compliance & payroll", text: "Handled by VijayHR ComplyCare." },
                 { title: "Administration & facilities", text: "Handled by Vijay Associates Group." },
                 { title: "Core business operations", text: "Remain with you." },
               ].map((item, i, arr) => (
@@ -192,7 +192,7 @@ export default function SolutionsIndex() {
       <CtaBand
         label="Get Started"
         title="Not sure which model fits?"
-        sub="Book a free consultation. We recommend only the engagement you actually need."
+        sub="Book a consultation. We recommend only the engagement you actually need."
         actions={[{ label: "Find the Right Model →", href: "/peoplecare/contact" }]}
       />
     </main>

@@ -38,7 +38,7 @@ export default function PeopleCareHome() {
         emphasis="They're Built."
         sub="Strategic HR leadership, employee engagement and talent development under one accountable people partner — built on 20+ years of Vijay Associates' legacy."
         ctas={[
-          { label: "Book Free Consultation →", href: "/peoplecare/contact" },
+          { label: "Book Consultation →", href: "/peoplecare/contact" },
           { label: "Our Solutions", href: "/peoplecare/solutions", variant: "outline" },
         ]}
         stats={[
@@ -152,7 +152,7 @@ export default function PeopleCareHome() {
         text="One trusted relationship across People, Talent and Compliance."
         pillars={[
           { name: "VijayHR PeopleCare", text: "People, culture, talent and leadership.", current: true },
-          { name: "VijayHR ComplyCare", text: "Payroll and statutory compliance — PF, ESI, PT, filings, audits." },
+          { name: "VijayHR ComplyCare", text: "Statutory compliance and payroll — PF, ESI, PT, filings, audits." },
           { name: "Vijay Associates Group", text: "Optional administration and facilities support." },
         ]}
       />
@@ -160,9 +160,9 @@ export default function PeopleCareHome() {
       <CtaBand
         label="Get Started"
         title="Ready to build a workplace where people perform and grow?"
-        sub="Book a free, no-obligation consultation. An HR specialist responds within one business day."
+        sub="Book a no-obligation consultation. An HR specialist responds within one business day."
         actions={[
-          { label: "Book Free Consultation →", href: "/peoplecare/contact" },
+          { label: "Book Consultation →", href: "/peoplecare/contact" },
           { label: "Call +91 94440 21222", href: "tel:+919444021222" },
         ]}
       />

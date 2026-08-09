@@ -23,7 +23,7 @@ const groups = [
     title: "Scope & Functions",
     items: [
       { q: "What HR functions do you manage?", a: "Ten core functions across the full employee lifecycle — from talent acquisition to retention and career development." },
-      { q: "Do you handle payroll and statutory compliance?", a: "Not within PeopleCare — those are handled by our companion entity VijayHR ComplyCare, so you still get complete coverage from one group." },
+      { q: "Do you handle statutory compliance and payroll?", a: "Not within PeopleCare — those are handled by our companion entity VijayHR ComplyCare, so you still get complete coverage from one group." },
       { q: "Do you work with manufacturing organizations?", a: "Yes — with specialised programs for shopfloor engagement, supervisor excellence, workforce stability, recognition, leadership pipelines and culture transformation." },
     ],
   },
@@ -33,7 +33,7 @@ const groups = [
       { q: "What engagement models do you offer?", a: "Bronze (Advisory Retainer), Silver (HR Business Partner on Demand) and Gold (Complete HR Managed Services), customised to your size and scope." },
       { q: "How quickly do we see results?", a: "Engagements follow a structured 90-Day Transformation — Discover & Diagnose, Design & Build, Implement & Strengthen — with measurable deliverables and governance reviews." },
       { q: "How do we measure the value you deliver?", a: "Through a Business Impact Dashboard and a governance cadence of monthly, quarterly and annual reviews." },
-      { q: "How do we get started?", a: "Book a free consultation — we'll understand your priorities, recommend the right model and begin with a diagnosis." },
+      { q: "How do we get started?", a: "Book a consultation — we'll understand your priorities, recommend the right model and begin with a diagnosis." },
     ],
   },
 ];

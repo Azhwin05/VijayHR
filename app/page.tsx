@@ -55,7 +55,7 @@ export default function GroupHome() {
             </Reveal>
 
             <Reveal delay={0.24} className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
-              <TextLink href="/complycare">Payroll &amp; Compliance →</TextLink>
+              <TextLink href="/complycare">Compliance &amp; Payroll →</TextLink>
               <TextLink href="/peoplecare">HR Partners on Demand →</TextLink>
             </Reveal>
           </div>
@@ -83,7 +83,7 @@ export default function GroupHome() {
               {
                 accent: "#7A2331",
                 tint: "#F9F2EF",
-                kicker: "Payroll & Labour-Law Compliance",
+                kicker: "Labour-Law Compliance & Payroll",
                 name: "VijayHR ComplyCare",
                 body: "Pan-India payroll management and statutory compliance under one accountable partner — accurate, audit-ready, always on time.",
                 cta: "Explore ComplyCare →",

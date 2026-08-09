@@ -7,7 +7,7 @@ import { complycareCategories, complycareServices } from "@/lib/data/complycare-
 export const metadata: Metadata = {
   title: "Services — VijayHR ComplyCare",
   description:
-    "11 payroll and compliance service verticals across 5 categories. Audit, advisory, payroll, factory, EHS and more.",
+    "11 compliance and payroll service verticals across 5 categories. Audit, advisory, factory, EHS and more.",
 };
 
 export default function ServicesIndex() {
@@ -26,7 +26,7 @@ export default function ServicesIndex() {
         </Reveal>
         <Reveal delay={0.12}>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
-            End-to-end payroll and statutory compliance — from audits and
+            End-to-end statutory compliance and payroll — from audits and
             advisory to factory law, EHS and vendor governance.
           </p>
         </Reveal>
@@ -72,8 +72,8 @@ export default function ServicesIndex() {
       <CtaBand
         label="Get Started"
         title="Not sure which service you need?"
-        sub="Book a free assessment. We map only what applies to you — no upselling."
-        actions={[{ label: "Book Free Assessment →", href: "/complycare/contact" }]}
+        sub="Book an assessment. We map only what applies to you — no upselling."
+        actions={[{ label: "Book Assessment →", href: "/complycare/contact" }]}
       />
     </main>
   );

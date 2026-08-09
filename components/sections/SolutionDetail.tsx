@@ -90,7 +90,7 @@ export default function SolutionDetailPage({
       <CtaBand
         label="Get Started"
         title="Not sure which model fits?"
-        sub="Book a free consultation. We recommend only the engagement you actually need."
+        sub="Book a consultation. We recommend only the engagement you actually need."
         actions={[{ label: "Find the Right Model →", href: "/peoplecare/contact" }]}
       />
     </main>

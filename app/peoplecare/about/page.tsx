@@ -124,7 +124,7 @@ export default function AboutPage() {
         text="PeopleCare handles people, culture, talent and leadership; our companion entity VijayHR ComplyCare handles payroll and statutory compliance; Vijay Associates Group can deploy optional administration and facilities support. One trusted relationship across People, Talent and Compliance."
         pillars={[
           { name: "VijayHR PeopleCare", text: "People, culture, talent and leadership.", current: true },
-          { name: "VijayHR ComplyCare", text: "Payroll and statutory compliance — PF, ESI, PT, filings, audits." },
+          { name: "VijayHR ComplyCare", text: "Statutory compliance and payroll — PF, ESI, PT, filings, audits." },
           { name: "Vijay Associates Group", text: "Optional administration and facilities support." },
         ]}
       />
@@ -132,7 +132,7 @@ export default function AboutPage() {
       <CtaBand
         label="Work With Us"
         title="Ready to make people your competitive advantage?"
-        sub="Book a free consultation — no obligation, just honest advice."
+        sub="Book a consultation — no obligation, just honest advice."
         actions={[
           { label: "Partner With Us →", href: "/peoplecare/contact" },
           { label: "Explore Solutions", href: "/peoplecare/solutions" },

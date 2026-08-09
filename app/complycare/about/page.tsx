@@ -73,7 +73,7 @@ export default function AboutPage() {
               Our Vision
             </span>
             <p className="mt-4 font-display text-[20px] leading-snug text-ink">
-              To be India&rsquo;s most trusted payroll and compliance partner
+              To be India&rsquo;s most trusted compliance and payroll partner
               — the firm enterprises rely on to stay protected, prepared and
               penalty-free.
             </p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
         description="The four principles that guide every engagement, every filing and every client relationship."
         items={[
           { title: "Integrity", text: "We do what is right for the client, even when no one is checking." },
-          { title: "Precision", text: "In payroll and compliance, accuracy is not a goal — it is the baseline." },
+          { title: "Precision", text: "In compliance and payroll, accuracy is not a goal — it is the baseline." },
           { title: "Accountability", text: "We own outcomes end-to-end and stand behind every filing we make." },
           { title: "Expertise", text: "Two decades of domain depth, applied to every engagement." },
         ]}
@@ -172,9 +172,9 @@ export default function AboutPage() {
       <CtaBand
         label="Work With Us"
         title="Ready to partner with a firm that owns the outcome?"
-        sub="Book a free assessment — no obligation, just honest advice."
+        sub="Book an assessment — no obligation, just honest advice."
         actions={[
-          { label: "Book Free Assessment →", href: "/complycare/contact" },
+          { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Explore Services", href: "/complycare/services" },
         ]}
       />

@@ -3,13 +3,13 @@ import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact VijayHR PeopleCare | Book a Free HR Consultation",
+  title: "Contact VijayHR PeopleCare | Book an HR Consultation",
   description:
-    "Talk to VijayHR PeopleCare about HR Partners on Demand. Book a free, no-obligation consultation — a specialist responds within one business day.",
+    "Talk to VijayHR PeopleCare about HR Partners on Demand. Book a no-obligation consultation — a specialist responds within one business day.",
 };
 
 const whyContact = [
-  { title: "Free consultation", text: "A no-obligation review of your people priorities and the right model for you." },
+  { title: "Consultation", text: "A no-obligation review of your people priorities and the right model for you." },
   { title: "Fast response", text: "An HR specialist responds within one business day — not a call centre." },
   { title: "Honest advice", text: "We recommend only the engagement you actually need. No upselling." },
   { title: "Confidential", text: "Your people data is handled with strict confidentiality and care." },
@@ -69,7 +69,12 @@ export default function ContactPage() {
             <p className="font-medium text-ink">
               VijayHR PeopleCare — A Division of Vijay Associates Group
             </p>
-            <p className="mt-3">Phone: +91 94440 21222 · +91 97910 21222</p>
+            <p className="mt-3">
+              Phone:{" "}
+              <span className="font-semibold" style={{ color: "var(--accent)" }}>
+                +91 94440 21222 / +91 97910 21222
+              </span>
+            </p>
             <p className="mt-2">Email: peoplecare@vijayassociates.co.in</p>
             <p className="mt-2">
               Office: No. 106, Kanaga Durga Complex, 2nd Floor, Gangai Amman
@@ -79,7 +84,7 @@ export default function ContactPage() {
         </div>
 
         <ContactForm
-          title="Book a Free Consultation"
+          title="Book a Consultation"
           sub="No obligation. An HR specialist responds within one business day."
           includeDesignation
           interestLabel="Area of Interest"
@@ -87,7 +92,7 @@ export default function ContactPage() {
           sizeLabel="Workforce Size"
           sizeOptions={["< 50 employees", "50 – 200", "200 – 500", "500+"]}
           messagePlaceholder="Tell us about your people priorities or what you're looking for…"
-          submitLabel="Book Free Consultation"
+          submitLabel="Book Consultation"
           successTitle="Consultation Requested"
           successText="Thank you, {name}. An HR specialist will be in touch within one business day."
         />

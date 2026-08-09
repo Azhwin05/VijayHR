@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "VijayHR ComplyCare — Payroll & Labour Law Compliance",
+  title: "VijayHR ComplyCare — Labour Law Compliance & Payroll",
   description:
-    "Pan-India payroll management and labour-law compliance. Accurate, accountable and always audit-ready.",
+    "Pan-India labour-law compliance and payroll management. Accurate, accountable and always audit-ready.",
 };
 
 const nav = [

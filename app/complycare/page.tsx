@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
-import DeliverPanel from "@/components/sections/DeliverPanel";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyChoose from "@/components/sections/WhyChoose";
 import ChallengeSolution from "@/components/sections/ChallengeSolution";
@@ -13,11 +12,10 @@ import CtaBand from "@/components/sections/CtaBand";
 export const metadata: Metadata = {
   title: "VijayHR ComplyCare — Compliance without Compromise. Payroll without Errors.",
   description:
-    "Pan-India payroll and labour-law compliance partner. Accurate payroll, statutory coverage and single-point ownership.",
+    "Pan-India labour-law compliance and payroll partner. Accurate statutory coverage and payroll, single-point ownership.",
 };
 
 const services = [
-  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
   { name: "Labour Law & Statutory Compliance", tagline: "Every applicable central and state obligation — tracked, filed and audit-ready.", href: "/complycare/services/labour-law", image: "/services/labour-law-v2.webp" },
   { name: "Compliance Audits", tagline: "An independent, risk-classified view of where you truly stand.", href: "/complycare/services/audits", image: "/services/audits-v2.webp" },
   { name: "Assessments & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory", image: "/services/advisory-v2.webp" },
@@ -28,49 +26,35 @@ const services = [
   { name: "Multi-Sector Labour Law", tagline: "Shops, CLRA, BOCW, Mines and more — registrations through ongoing filings.", href: "/complycare/services/multi-sector", image: "/services/multi-sector-v2.webp" },
   { name: "Environmental & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
   { name: "Vendor Compliance & Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
+  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
 ];
 
 export default function ComplyCareHome() {
   return (
     <main>
       <Hero
-        label="Pan-India Payroll & Compliance Partner"
+        label="Pan-India Compliance & Payroll Partner"
         heading="Compliance without Compromise."
         emphasis="Payroll without Errors."
         sub="End-to-end statutory compliance and accurate payroll under one accountable partner — built on 20+ years of Vijay Associates' legacy."
         ctas={[
-          { label: "Book Free Assessment →", href: "/complycare/contact" },
+          { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Our Services", href: "/complycare/services", variant: "outline" },
         ]}
-        stats={[
-          { value: 20, suffix: "+", label: "Years of legacy" },
-          { value: 0, label: "Missed deadlines" },
-          { value: 11, label: "Service verticals" },
-          { value: 100, suffix: "%", prefix: "Pan-India ", label: "Delivery" },
-        ]}
         image="/brand/complycare-hero.webp"
-      />
-
-      <DeliverPanel
-        items={[
-          { title: "Zero missed deadlines", sub: "Live compliance calendar, 100% adherence" },
-          { title: "99.5%+ payroll accuracy", sub: "Maker-checker validation every cycle" },
-          { title: "24-hr inspection response", sub: "Nodal Officer on call, always ready" },
-          { title: "Real-time dashboards", sub: "Visibility across every statute & site" },
-        ]}
       />
 
       <ServicesGrid
         eyebrow="What We Do"
         title="11 Service Verticals, One Accountable Partner"
-        description="From payroll to factory compliance, audits to representation — everything your organisation needs, under one roof."
+        description="From factory compliance to payroll, audits to representation — everything your organisation needs, under one roof."
         items={services}
       />
 
       <WhyChoose
         eyebrow="Why Choose Us"
         title="The VijayHR Difference"
-        description="Six reasons why enterprises trust us to own their payroll and compliance — not just advise on it."
+        description="Six reasons why enterprises trust us to own their compliance and payroll — not just advise on it."
         items={[
           { title: "Compliance-First philosophy", text: "We eliminate legal exposure before optimising anything else — ownership of the outcome, not advice from a distance." },
           { title: "Single-point ownership", text: "One accountable partner from audit to monitoring to representation. No gaps, no finger-pointing." },
@@ -141,7 +125,7 @@ export default function ComplyCareHome() {
           { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — 99.5%+ accuracy, 2–3 day turnaround." },
           { title: "Lower risk", text: "Penalties, prosecutions and reputational damage avoided before they arise." },
           { title: "Freed-up teams", text: "HR and Finance focus on people and strategy, not month-end processing." },
-          { title: "Total visibility", text: "Know your payroll and compliance status by location and entity, in real time." },
+          { title: "Total visibility", text: "Know your compliance and payroll status by location and entity, in real time." },
           { title: "Inspection confidence", text: "Face any authority with complete, ready-to-present documentation." },
           { title: "Predictable cost", text: "A transparent retainer in place of unpredictable penalty exposure." },
         ]}
@@ -163,9 +147,9 @@ export default function ComplyCareHome() {
       <CtaBand
         label="Get Started"
         title="Ready to make compliance effortless?"
-        sub="Book a free, no-obligation assessment. A specialist responds within one business day."
+        sub="Book a no-obligation assessment. A specialist responds within one business day."
         actions={[
-          { label: "Book Free Assessment →", href: "/complycare/contact" },
+          { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Call +91 94440 21222", href: "tel:+919444021222" },
         ]}
       />

@@ -6,7 +6,7 @@ import CtaBand from "@/components/sections/CtaBand";
 export const metadata: Metadata = {
   title: "Industries — VijayHR ComplyCare",
   description:
-    "Specialist payroll and compliance support across manufacturing, IT, retail, construction, logistics, BFSI, hospitality and mining.",
+    "Specialist compliance and payroll support across manufacturing, IT, retail, construction, logistics, BFSI, hospitality and mining.",
 };
 
 export default function IndustriesPage() {
@@ -61,9 +61,9 @@ export default function IndustriesPage() {
       <CtaBand
         label="Get Started"
         title="Know your sector. Know your obligations."
-        sub="A free assessment maps exactly what applies to your industry and locations."
+        sub="An assessment maps exactly what applies to your industry and locations."
         actions={[
-          { label: "Book Free Assessment →", href: "/complycare/contact" },
+          { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "View Services", href: "/complycare/services" },
         ]}
       />

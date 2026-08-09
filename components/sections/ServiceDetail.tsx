@@ -147,8 +147,8 @@ export default function ServiceDetailPage({
       <CtaBand
         label="Get Started"
         title="Not sure which service you need?"
-        sub="Book a free assessment. We map only what applies to you — no upselling."
-        actions={[{ label: "Book Free Assessment →", href: "/complycare/contact" }]}
+        sub="Book an assessment. We map only what applies to you — no upselling."
+        actions={[{ label: "Book Assessment →", href: "/complycare/contact" }]}
       />
     </main>
   );

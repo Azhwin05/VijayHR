@@ -21,7 +21,7 @@ export const complycareServices: ServiceDetail[] = [
       "We run your end-to-end monthly payroll — salary computation, statutory deductions, payslips, TDS, reimbursements and full & final settlements — fully integrated with compliance so your filings and payroll always stay in sync.",
     challenges: [
       { title: "Errors and wrong deductions", text: "Manual payroll leads to mistakes, unhappy employees and rework." },
-      { title: "Missed statutory deadlines", text: "PF, ESI, PT and TDS dates slip when payroll and compliance are disconnected." },
+      { title: "Missed statutory deadlines", text: "PF, ESI, PT and TDS dates slip when compliance and payroll are disconnected." },
       { title: "Drain on HR & Finance", text: "Month-end processing consumes time your teams should spend on people." },
       { title: "Data confidentiality risk", text: "Sensitive salary data handled without proper controls." },
     ],
@@ -390,11 +390,6 @@ export const complycareServices: ServiceDetail[] = [
 
 export const complycareCategories = [
   {
-    name: "Payroll & People Operations",
-    description: "Accurate payroll and team capability — the day-to-day engine of your people function.",
-    services: ["payroll", "training"],
-  },
-  {
     name: "Compliance Management",
     description: "Continuous statutory tracking, advisory and centralised visibility.",
     services: ["labour-law", "advisory", "systems"],
@@ -413,5 +408,10 @@ export const complycareCategories = [
     name: "People & Authorities",
     description: "Professional representation before inspectors and statutory authorities.",
     services: ["representation"],
+  },
+  {
+    name: "Payroll & People Operations",
+    description: "Accurate payroll and team capability — the day-to-day engine of your people function.",
+    services: ["training", "payroll"],
   },
 ];

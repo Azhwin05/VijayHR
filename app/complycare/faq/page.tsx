@@ -6,22 +6,10 @@ import TextLink from "@/components/ui/TextLink";
 export const metadata: Metadata = {
   title: "FAQ — VijayHR ComplyCare",
   description:
-    "26 questions answered on payroll, compliance, pricing and getting started with VijayHR ComplyCare.",
+    "18 questions answered on compliance, pricing and getting started with VijayHR ComplyCare.",
 };
 
 const groups = [
-  {
-    title: "Payroll",
-    items: [
-      { q: "Do you offer payroll management as well as compliance?", a: "Yes. Payroll Management is one of our core service verticals. We run end-to-end monthly payroll — salary computation, statutory deductions, payslips, TDS, Form 16 and full & final settlements — fully integrated with statutory compliance." },
-      { q: "How accurate is your payroll?", a: "We commit to 99.5%+ payroll accuracy through a maker-checker (multi-level validation) process, with no charges for errors on our side." },
-      { q: "How fast is your payroll turnaround?", a: "2–3 working days from receipt of validated inputs, with employee payroll and tax queries resolved within 24–48 hours." },
-      { q: "Do you handle statutory deductions and filings?", a: "Yes — PF, ESI, Professional Tax and TDS are computed, processed and filed on time as part of payroll." },
-      { q: "Can you generate Form 16 and handle income tax?", a: "Yes — monthly TDS, investment-proof verification, quarterly computations and annual Form 16 generation are all included." },
-      { q: "Do you process full & final settlements?", a: "Yes — exit settlements including leave encashment, gratuity, recovery adjustments and final settlement statements." },
-      { q: "How do you keep payroll data confidential?", a: "Through strict data-security protocols, role-based access and a maker-checker control environment, with confidentiality obligations that survive the engagement." },
-    ],
-  },
   {
     title: "Compliance",
     items: [
@@ -49,10 +37,9 @@ const groups = [
   {
     title: "Getting Started",
     items: [
-      { q: "How do we get started?", a: "Book a free assessment. We review your current posture, map applicable obligations and give you an honest written assessment — no obligation." },
+      { q: "How do we get started?", a: "Book an assessment. We review your current posture, map applicable obligations and give you an honest written assessment — no obligation." },
       { q: "How quickly can you start?", a: "Onboarding and scoping begin in Week 1, with a baseline audit in Week 2 and a gap report by Week 3; ongoing managed services begin from Month 2." },
       { q: "Can you take over from our existing consultant?", a: "Yes — this is the most common starting point. We run a structured transition: baseline audit, register reconciliation and calendar handover, working from your records." },
-      { q: "How do you migrate our existing payroll?", a: "Through a structured migration — requirement study, data migration and cleanup, SOP creation, a parallel run with gap analysis, then go-live with stabilisation support." },
       { q: "Is your service available across India?", a: "Yes — delivery is Pan-India through our managed associate network, with centralised oversight and reporting from Chennai." },
     ],
   },
@@ -74,9 +61,9 @@ export default function FaqPage() {
         </Reveal>
         <Reveal delay={0.12}>
           <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
-            26 answers across payroll, compliance, pricing and getting
-            started. If you don&rsquo;t find what you need, contact us — a
-            specialist responds within one business day.
+            18 answers across compliance, pricing and getting started. If
+            you don&rsquo;t find what you need, contact us — a specialist
+            responds within one business day.
           </p>
         </Reveal>
       </section>
