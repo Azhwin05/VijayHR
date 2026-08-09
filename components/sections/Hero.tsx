@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/ui/Button";
 import Counter from "@/components/Counter";
@@ -12,6 +13,7 @@ export default function Hero({
   sub,
   ctas,
   stats,
+  image,
 }: {
   label: string;
   heading: string;
@@ -19,9 +21,10 @@ export default function Hero({
   sub: string;
   ctas: Cta[];
   stats?: Stat[];
+  image?: string;
 }) {
   return (
-    <section className="relative overflow-hidden">
+    <section className={`relative overflow-hidden ${image ? "lg:min-h-[620px]" : ""}`}>
       {/* soft brand wash behind the hero — the page's quiet colour ground */}
       <div
         aria-hidden
@@ -32,37 +35,60 @@ export default function Hero({
         }}
       />
 
-      <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-24 sm:px-10 sm:pt-32">
-        <Reveal as="p" className="mb-7 text-[12px] font-medium uppercase tracking-[0.18em] text-muted">
-          {label}
-        </Reveal>
+      {/* supporting photography — bleeds off the right edge, its own
+          built-in fade blends it into the paper background, so no card
+          or border is needed to contain it */}
+      {image && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block xl:w-[50%]"
+        >
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="52vw"
+            className="object-cover object-right"
+            priority
+          />
+        </div>
+      )}
 
-        <Reveal delay={0.08}>
-          <h1 className="max-w-4xl text-[40px] leading-[1.03] text-ink sm:text-[64px]">
-            {heading}
-            <br />
-            <span className="editorial italic text-ink/45">{emphasis}</span>
-          </h1>
-        </Reveal>
+      <div className="relative z-10 mx-auto max-w-[1280px] px-6 pb-20 pt-24 sm:px-10 sm:pt-32">
+        <div className={image ? "lg:max-w-[480px] xl:max-w-[560px]" : ""}>
+          <Reveal as="p" className="mb-7 text-[12px] font-medium uppercase tracking-[0.18em] text-muted">
+            {label}
+          </Reveal>
 
-        <Reveal delay={0.16}>
-          <p className="mt-8 max-w-xl text-[17px] leading-[1.65] text-ink/65">
-            {sub}
-          </p>
-        </Reveal>
+          <Reveal delay={0.08}>
+            <h1 className="max-w-4xl text-[40px] leading-[1.03] text-ink sm:text-[64px]">
+              {heading}
+              <br />
+              <span className="editorial italic text-ink/45">{emphasis}</span>
+            </h1>
+          </Reveal>
 
-        <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center gap-4">
-          {ctas.map((cta) => (
-            <Button key={cta.href} href={cta.href} variant={cta.variant ?? "solid"}>
-              {cta.label}
-            </Button>
-          ))}
-        </Reveal>
+          <Reveal delay={0.16}>
+            <p className="mt-8 max-w-xl text-[17px] leading-[1.65] text-ink/65">
+              {sub}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center gap-4">
+            {ctas.map((cta) => (
+              <Button key={cta.href} href={cta.href} variant={cta.variant ?? "solid"}>
+                {cta.label}
+              </Button>
+            ))}
+          </Reveal>
+        </div>
 
         {stats && (
           <Reveal
             delay={0.3}
-            className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-[12px] border border-black/[0.06] sm:grid-cols-4"
+            className={`relative mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-[12px] border border-black/[0.06] sm:grid-cols-4 ${
+              image ? "lg:max-w-[560px]" : ""
+            }`}
             style={{ backgroundColor: "var(--hairline)" }}
           >
             {stats.map((s) => (

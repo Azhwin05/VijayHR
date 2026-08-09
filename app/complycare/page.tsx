@@ -48,6 +48,7 @@ export default function ComplyCareHome() {
           { value: 11, label: "Service verticals" },
           { value: 100, suffix: "%", prefix: "Pan-India ", label: "Delivery" },
         ]}
+        image="/brand/complycare-hero.webp"
       />
 
       <DeliverPanel
