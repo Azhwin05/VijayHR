@@ -35,20 +35,28 @@ export default function Hero({
         }}
       />
 
-      {/* supporting photography — bleeds off the right edge, its own
-          built-in fade blends it into the paper background, so no card
-          or border is needed to contain it */}
+      {/* supporting photography — sized to the image's own aspect ratio
+          (never cropped, so its built-in edge fade stays intact) and
+          masked with an extra gradient so it dissolves into the page
+          instead of ending in a hard rectangle */}
       {image && (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block xl:w-[50%]"
+          className="pointer-events-none absolute right-0 top-1/2 hidden w-[48%] -translate-y-1/2 lg:block xl:right-[-2%] xl:w-[45%]"
+          style={{ aspectRatio: "1400 / 933" }}
         >
           <Image
             src={image}
             alt=""
             fill
-            sizes="52vw"
-            className="object-cover object-right"
+            sizes="45vw"
+            className="object-contain object-right"
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.08) 10%, rgba(0,0,0,0.35) 22%, rgba(0,0,0,0.75) 36%, black 52%, black 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.08) 10%, rgba(0,0,0,0.35) 22%, rgba(0,0,0,0.75) 36%, black 52%, black 100%)",
+            }}
             priority
           />
         </div>
@@ -81,6 +89,20 @@ export default function Hero({
               </Button>
             ))}
           </Reveal>
+
+          {/* mobile/tablet — image stacks below the CTAs instead of
+              bleeding off an edge that doesn't exist at this width */}
+          {image && (
+            <Reveal delay={0.3} className="relative mt-12 aspect-[1400/933] w-full lg:hidden">
+              <Image
+                src={image}
+                alt=""
+                fill
+                sizes="100vw"
+                className="rounded-[12px] object-contain object-center"
+              />
+            </Reveal>
+          )}
         </div>
 
         {stats && (
