@@ -80,8 +80,8 @@ export default function PeopleCareHome() {
       />
 
       <ChallengeSolution
-        eyebrow="The Problem We Solve"
-        title="Sound Familiar?"
+        eyebrow="Challenges"
+        title="The Problem We Solve"
         description="Every people challenge below has a structured, accountable solution."
         challenges={[
           "High attrition and the constant cost of re-hiring.",

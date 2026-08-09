@@ -66,8 +66,8 @@ export default function ComplyCareHome() {
       />
 
       <ChallengeSolution
-        eyebrow="The Problem We Solve"
-        title="Sound Familiar?"
+        eyebrow="Challenges"
+        title="The Problem We Solve"
         description="Every problem below has a structured, accountable solution."
         challenges={[
           "Missed statutory deadlines and surprise penalty notices.",
@@ -79,11 +79,11 @@ export default function ComplyCareHome() {
         ]}
         solutions={[
           "A live compliance calendar with 100% deadline adherence.",
-          "Maker-checker payroll at 99.5%+ accuracy, paid on time.",
+          "Maker-checker payroll validation, paid on time.",
           "Vendor due diligence that shields you from third-party exposure.",
           "Real-time dashboards across every entity and site.",
           "Permanently audit-ready documentation, updated monthly.",
-          "One accountable partner on call 364 days a year.",
+          "One accountable partner, always on call.",
         ]}
       />
 
@@ -122,7 +122,7 @@ export default function ComplyCareHome() {
         title="What You Get"
         description="Six concrete outcomes our clients see when they partner with VijayHR ComplyCare."
         items={[
-          { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — 99.5%+ accuracy, 2–3 day turnaround." },
+          { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — accurate, 2–3 day turnaround." },
           { title: "Lower risk", text: "Penalties, prosecutions and reputational damage avoided before they arise." },
           { title: "Freed-up teams", text: "HR and Finance focus on people and strategy, not month-end processing." },
           { title: "Total visibility", text: "Know your compliance and payroll status by location and entity, in real time." },

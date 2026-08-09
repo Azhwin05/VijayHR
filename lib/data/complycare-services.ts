@@ -26,7 +26,7 @@ export const complycareServices: ServiceDetail[] = [
       { title: "Data confidentiality risk", text: "Sensitive salary data handled without proper controls." },
     ],
     approach:
-      "A maker-checker payroll engine with multi-level validation, statutory deductions built in, and a dedicated query desk — delivering 99.5%+ accuracy with a 2–3 day turnaround and zero charges for our errors.",
+      "A maker-checker payroll engine with multi-level validation, statutory deductions built in, and a dedicated query desk — delivering a 2–3 day turnaround and zero charges for our errors.",
     included: [
       { title: "End-to-end processing", text: "Salary structures, variable pay, arrears, leave & attendance integration, payslips." },
       { title: "Statutory deductions", text: "PF, ESI, PT and TDS computed, processed and filed on time." },
@@ -36,12 +36,12 @@ export const complycareServices: ServiceDetail[] = [
       { title: "Employee query desk", text: "Payroll and tax queries resolved within 24–48 hours." },
     ],
     gains: [
-      { title: "99.5%+ accuracy", text: "Maker-checker validation on every cycle." },
+      { title: "High accuracy", text: "Maker-checker validation on every cycle." },
       { title: "On-time, every time", text: "2–3 day turnaround from validated inputs." },
       { title: "Freed-up teams", text: "Your HR and Finance focus on strategy." },
     ],
     faqs: [
-      { q: "How accurate is your payroll?", a: "We commit to 99.5%+ accuracy through a maker-checker process, with no charges for errors on our side." },
+      { q: "How accurate is your payroll?", a: "We commit to high accuracy through a maker-checker process, with no charges for errors on our side." },
       { q: "How fast is the turnaround?", a: "2–3 working days from receipt of validated inputs, with employee queries resolved in 24–48 hours." },
       { q: "Can you migrate our existing payroll?", a: "Yes — through a structured migration with data cleanup, a parallel run and gap analysis before go-live." },
     ],
@@ -70,7 +70,7 @@ export const complycareServices: ServiceDetail[] = [
       { title: "Monthly MIS", text: "One-page compliance summary every month." },
     ],
     gains: [
-      { title: "Zero missed deadlines", text: "100% adherence to applicable due dates." },
+      { title: "Full statutory coverage", text: "Every applicable central and state obligation, tracked." },
       { title: "Always audit-ready", text: "Records prepared to inspection standard." },
       { title: "Codes-ready", text: "Re-baselined for India's new Labour Codes." },
     ],
@@ -385,33 +385,5 @@ export const complycareServices: ServiceDetail[] = [
       { q: "Do you check vendors before onboarding?", a: "Yes — due diligence at onboarding plus ongoing monitoring thereafter." },
       { q: "How do you track vendor status?", a: "Through continuous monitoring with dashboards and exception alerts." },
     ],
-  },
-];
-
-export const complycareCategories = [
-  {
-    name: "Compliance Management",
-    description: "Continuous statutory tracking, advisory and centralised visibility.",
-    services: ["labour-law", "advisory", "systems"],
-  },
-  {
-    name: "Audit & Risk",
-    description: "Independent assurance and supply-chain governance that protects you.",
-    services: ["audits", "vendor"],
-  },
-  {
-    name: "Sector & Regulatory",
-    description: "Specialist support for factories, multi-sector statutes and the environment.",
-    services: ["factory", "multi-sector", "ehs"],
-  },
-  {
-    name: "People & Authorities",
-    description: "Professional representation before inspectors and statutory authorities.",
-    services: ["representation"],
-  },
-  {
-    name: "Payroll & People Operations",
-    description: "Accurate payroll and team capability — the day-to-day engine of your people function.",
-    services: ["training", "payroll"],
   },
 ];
