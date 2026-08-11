@@ -47,13 +47,7 @@ export default function IndustryCards({
               }}
             />
             <div className="absolute inset-x-0 bottom-0 p-4">
-              <span
-                className="inline-block rounded-full px-2.5 py-1 text-[9.5px] font-semibold uppercase tracking-[0.14em] text-white"
-                style={{ backgroundColor: "var(--brass)" }}
-              >
-                Sector
-              </span>
-              <p className="mt-2 text-[15px] font-semibold leading-snug text-white">
+              <p className="text-[15px] font-semibold leading-snug text-white">
                 {ind.name}
               </p>
             </div>
