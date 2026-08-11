@@ -35,9 +35,9 @@ export default function IndustriesPage() {
         industries={[
           { name: "Manufacturing & Factories", flagship: true, challenge: "Shopfloor disengagement, supervisor gaps and high workforce churn across shifts.", approach: "Specialised programs: shopfloor engagement, supervisor excellence, workforce stability, recognition, leadership pipelines and culture transformation." },
           { name: "IT, ITeS & Technology", challenge: "Rapid scaling, competitive talent markets and retention pressure.", approach: "Talent acquisition, engagement and career-development frameworks that keep high-demand talent longer." },
-          { name: "Retail & Multi-location", challenge: "High attrition and inconsistent people practices across outlets.", approach: "Standardised onboarding, engagement and manager enablement across every location." },
           { name: "Construction & Real Estate", challenge: "Project-based teams and dispersed, transient workforces.", approach: "Workforce planning, site-level leadership and retention strategies built for project cycles." },
           { name: "Logistics & Warehousing", challenge: "Dispersed sites and frontline workforce stability.", approach: "Frontline engagement, supervisor development and communication frameworks across sites." },
+          { name: "Retail & Multi-location", challenge: "High attrition and inconsistent people practices across outlets.", approach: "Standardised onboarding, engagement and manager enablement across every location." },
           { name: "BFSI & Professional Services", challenge: "Performance culture and leadership-pipeline expectations.", approach: "Performance management, leadership development and succession planning at scale." },
           { name: "Hospitality & Catering", challenge: "Very high churn and service-culture consistency.", approach: "Rapid onboarding, recognition systems and engagement practices that reduce churn." },
           { name: "Growing Enterprises", challenge: "Scaling people processes without a full HR department.", approach: "Embedded HR leadership and org-development frameworks that scale with you." },

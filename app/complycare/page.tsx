@@ -26,6 +26,7 @@ const services = [
   { name: "Multi-Sector Labour Law", tagline: "Shops, CLRA, BOCW, Mines and more — registrations through ongoing filings.", href: "/complycare/services/multi-sector", image: "/services/multi-sector-v2.webp" },
   { name: "Environmental & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
   { name: "Vendor Compliance & Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
+  { name: "POSH Compliance", tagline: "Comprehensive workplace protection and POSH compliance — promoting a safe, respectful and compliant workplace.", href: "/complycare/services/posh", image: "/services/posh-v2.webp" },
   { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
 ];
 
@@ -46,7 +47,7 @@ export default function ComplyCareHome() {
 
       <ServicesGrid
         eyebrow="What We Do"
-        title="11 Service Verticals, One Accountable Partner"
+        title="12 Service Verticals, One Accountable Partner"
         description="From factory compliance to payroll, audits to representation — everything your organisation needs, under one roof."
         items={services}
       />
@@ -106,9 +107,9 @@ export default function ComplyCareHome() {
         industries={[
           "Manufacturing & Factories",
           "IT/ITeS & Technology",
-          "Retail & Multi-location",
           "Construction & Real Estate",
           "Logistics & Warehousing",
+          "Retail & Multi-location",
           "BFSI & Professional Services",
           "Hospitality & Catering",
           "Mining & Plantations",

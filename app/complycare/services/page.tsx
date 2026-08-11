@@ -7,7 +7,7 @@ import { complycareServices } from "@/lib/data/complycare-services";
 export const metadata: Metadata = {
   title: "Services — VijayHR ComplyCare",
   description:
-    "11 compliance and payroll service verticals. Audit, advisory, factory, EHS and more.",
+    "12 compliance and payroll service verticals. Audit, advisory, factory, EHS and more.",
 };
 
 // Compliance-first ordering — payroll last.
@@ -22,6 +22,7 @@ const order = [
   "multi-sector",
   "ehs",
   "vendor",
+  "posh",
   "payroll",
 ];
 const orderedServices = order.map(
@@ -39,7 +40,7 @@ export default function ServicesIndex() {
         </Reveal>
         <Reveal delay={0.06}>
           <h1 className="mt-4 max-w-2xl font-display text-[40px] leading-tight text-ink sm:text-[52px]">
-            11 Verticals. One Partner.
+            12 Verticals. One Partner.
           </h1>
         </Reveal>
         <Reveal delay={0.12}>

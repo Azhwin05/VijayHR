@@ -120,9 +120,9 @@ export default function PeopleCareHome() {
         industries={[
           "Manufacturing & Factories",
           "IT/ITeS & Technology",
-          "Retail & Multi-location",
           "Construction & Real Estate",
           "Logistics & Warehousing",
+          "Retail & Multi-location",
           "BFSI & Professional Services",
           "Hospitality & Catering",
           "Growing Enterprises",

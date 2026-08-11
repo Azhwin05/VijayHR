@@ -17,6 +17,7 @@ const MAP = {
   "multi-sector": "Compliance Management.webp",
   ehs: "Environmental, Pollution Control & EHS.webp",
   vendor: "Vendor Compliance & Third-Party Governance.webp",
+  posh: "Posh Compliance.webp",
 };
 
 const W = 800;

@@ -25,6 +25,7 @@ const interestOptions = [
   "Multi-Sector Labour Law",
   "Environmental & EHS",
   "Vendor Compliance & Governance",
+  "POSH Compliance",
   "Payroll Management",
   "Not sure — need guidance",
 ];

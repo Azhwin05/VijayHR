@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import Rule from "@/components/Rule";
-import Timeline from "@/components/sections/Timeline";
+import Leadership from "@/components/sections/Leadership";
 import WhyChoose from "@/components/sections/WhyChoose";
 import CtaBand from "@/components/sections/CtaBand";
 
 export const metadata: Metadata = {
   title: "About — VijayHR ComplyCare",
   description:
-    "Built on 20+ years of Vijay Associates' legacy. Learn about our mission, vision, journey and values.",
+    "Built on 20+ years of Vijay Associates' legacy. Learn about our mission, vision, leadership and values.",
 };
 
 export default function AboutPage() {
@@ -91,19 +91,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Timeline
-        eyebrow="Our History"
-        title="The Journey"
-        description="Two decades of building expertise, expanding coverage and deepening client trust."
-        items={[
-          { year: "2002", title: "The legacy begins", text: "Vijay Associates is founded in Chennai, building deep expertise in labour-law compliance." },
-          { year: "2008", title: "Multi-sector expansion", text: "Coverage broadens across manufacturing, IT and services as the client base grows." },
-          { year: "2015", title: "Technology adoption", text: "Centralised tracking and dashboards bring real-time visibility to client compliance." },
-          { year: "2020", title: "Pan-India delivery", text: "A vetted associate network extends delivery across India under central supervision." },
-          { year: "2026", title: "VijayHR ComplyCare Pvt Ltd", text: "The practice incorporates as a private limited company, adding managed payroll as a core vertical." },
+      <Leadership
+        eyebrow="Leadership"
+        title="Our Leadership"
+        name="Vijay Kumar E"
+        role="Managing Director"
+        bio={[
+          "Vijay Kumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
+          "His expertise encompasses Labour & Employment Law, Statutory Compliance, Payroll Compliance, Industrial Relations, HR Advisory, Compliance Audits, POSH Compliance, Contract Labour, and Regulatory Consulting. Over the years, he has worked closely with organizations across diverse industries, helping them strengthen their compliance frameworks, manage regulatory risks, and improve HR practices.",
+          "With a strong understanding of both business and regulatory requirements, he focuses on delivering practical, reliable, and customized solutions that enable organizations to remain compliant while supporting sustainable business growth.",
         ]}
-        ctaLabel="Start Your Journey →"
-        ctaHref="/complycare/contact"
+        philosophyLabel="Our Leadership Philosophy"
+        philosophy="Building compliant workplaces that enable businesses and people to grow with confidence."
       />
 
       <WhyChoose

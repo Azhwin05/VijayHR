@@ -35,9 +35,9 @@ export default function IndustriesPage() {
         industries={[
           { name: "Manufacturing & Factories", challenge: "Factory licensing, registers, safety and a large contract workforce across shifts.", approach: "End-to-end Factories Act compliance, safety audits and contractor oversight under one desk." },
           { name: "IT, ITeS & Technology", challenge: "Multi-state Shops & Establishments rules and rapid headcount changes.", approach: "Centralised multi-state registration, payroll and statutory tracking with real-time MIS." },
-          { name: "Retail & Multi-location", challenge: "Different state rules at every outlet and high attrition.", approach: "State-wise compliance calendars and standardised registers across all locations." },
           { name: "Construction & Real Estate", challenge: "BOCW cess, CLRA and constantly changing project sites.", approach: "Project-wise BOCW & CLRA registration, cess filing and site-level documentation." },
           { name: "Logistics & Warehousing", challenge: "Dispersed sites and a heavily contracted workforce.", approach: "Principal-employer protection, contractor due diligence and unified reporting." },
+          { name: "Retail & Multi-location", challenge: "Different state rules at every outlet and high attrition.", approach: "State-wise compliance calendars and standardised registers across all locations." },
           { name: "BFSI & Professional Services", challenge: "Establishment compliance and audit-grade documentation expectations.", approach: "Audit-ready registers, payroll precision and assessment support for scrutiny." },
           { name: "Hospitality & Catering", challenge: "Sector-specific rules, FSSAI and very high staff churn.", approach: "Catering & labour compliance, licensing and rapid onboarding documentation." },
           { name: "Mining & Plantations", challenge: "Mines Act and Plantation Labour Law with welfare obligations.", approach: "Specialist Mines & Plantation compliance, welfare records and authority liaison." },

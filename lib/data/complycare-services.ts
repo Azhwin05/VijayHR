@@ -386,4 +386,38 @@ export const complycareServices: ServiceDetail[] = [
       { q: "How do you track vendor status?", a: "Through continuous monitoring with dashboards and exception alerts." },
     ],
   },
+  {
+    slug: "posh",
+    name: "POSH Compliance",
+    category: "People & Authorities",
+    tagline: "Comprehensive workplace protection and POSH compliance — promoting a safe, respectful and compliant workplace.",
+    overview:
+      "We build and maintain a fully compliant POSH framework — Internal Committee constitution, policy drafting, mandatory training and structured case handling — so your workplace stays safe, respectful and legally protected.",
+    challenges: [
+      { title: "No Internal Committee", text: "Many organisations lack a properly constituted IC as required under the POSH Act." },
+      { title: "Policy gaps", text: "Outdated or missing POSH policies that don't reflect current statutory requirements." },
+      { title: "Untrained committees", text: "IC members handling sensitive complaints without proper training or process." },
+      { title: "Annual filing lapses", text: "Missed annual POSH compliance reports to the District Officer." },
+    ],
+    approach:
+      "End-to-end POSH compliance — Internal Committee constitution, policy drafting, mandatory awareness training and structured complaint handling — keeping you protected and audit-ready.",
+    included: [
+      { title: "IC constitution", text: "Internal Committee formed and documented per statutory requirements." },
+      { title: "Policy drafting", text: "POSH policy drafted and aligned to the 2013 Act." },
+      { title: "Awareness training", text: "Mandatory employee and IC training, delivered on-site or online." },
+      { title: "Complaint handling", text: "Structured inquiry process for complaints, with documentation support." },
+      { title: "Annual reporting", text: "Annual POSH compliance report prepared and filed on time." },
+      { title: "Ongoing advisory", text: "Continuous guidance as cases and regulations evolve." },
+    ],
+    gains: [
+      { title: "Legal protection", text: "A fully compliant POSH framework that shields your organisation." },
+      { title: "Safer workplace", text: "A workplace culture built on safety and respect." },
+      { title: "Audit-ready", text: "Documentation and processes ready for any inspection." },
+    ],
+    faqs: [
+      { q: "Is POSH compliance mandatory?", a: "Yes — every organisation with 10 or more employees must constitute an Internal Committee under the POSH Act, 2013." },
+      { q: "Do you train our Internal Committee?", a: "Yes — we deliver mandatory awareness training for employees and specialised training for IC members." },
+      { q: "Do you handle actual complaints?", a: "We support structured, confidential inquiry processes and documentation; the IC retains statutory decision-making authority." },
+    ],
+  },
 ];
