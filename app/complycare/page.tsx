@@ -4,7 +4,7 @@ import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyChoose from "@/components/sections/WhyChoose";
 import ChallengeSolution from "@/components/sections/ChallengeSolution";
 import ProcessSteps from "@/components/sections/ProcessSteps";
-import IndustriesTeaser from "@/components/sections/IndustriesTeaser";
+import IndustryCards from "@/components/sections/IndustryCards";
 import BenefitsGrid from "@/components/sections/BenefitsGrid";
 import Testimonials from "@/components/sections/Testimonials";
 import CtaBand from "@/components/sections/CtaBand";
@@ -100,19 +100,19 @@ export default function ComplyCareHome() {
         ]}
       />
 
-      <IndustriesTeaser
+      <IndustryCards
         eyebrow="Industries"
         title="Built for Your Sector"
         description="Specialist knowledge across 8 industries — we know what applies to you."
         industries={[
-          "Manufacturing & Factories",
-          "IT/ITeS & Technology",
-          "Construction & Real Estate",
-          "Logistics & Warehousing",
-          "Retail & Multi-location",
-          "BFSI & Professional Services",
-          "Hospitality & Catering",
-          "Mining & Plantations",
+          { name: "Manufacturing & Factories", image: "/industries/manufacturing.webp" },
+          { name: "IT, ITeS & Technology", image: "/industries/it.webp" },
+          { name: "Construction & Real Estate", image: "/industries/construction.webp" },
+          { name: "Logistics & Warehousing", image: "/industries/logistics.webp" },
+          { name: "Retail & Multi-location", image: "/industries/retail.webp" },
+          { name: "BFSI & Professional Services", image: "/industries/bfsi.webp" },
+          { name: "Hospitality & Catering", image: "/industries/hospitality.webp" },
+          { name: "Mining & Plantations", image: "/industries/mining.webp" },
         ]}
         ctaLabel="View All Industries"
         ctaHref="/complycare/industries"

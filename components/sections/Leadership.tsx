@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import SectionIntro from "@/components/sections/SectionIntro";
 
@@ -7,6 +8,7 @@ export default function Leadership({
   description,
   name,
   role,
+  photo,
   bio,
   philosophyLabel,
   philosophy,
@@ -16,6 +18,7 @@ export default function Leadership({
   description?: string;
   name: string;
   role: string;
+  photo?: string;
   bio: string[];
   philosophyLabel: string;
   philosophy: string;
@@ -26,7 +29,19 @@ export default function Leadership({
 
       <div className="mt-16 grid grid-cols-1 gap-10 lg:grid-cols-[280px_1fr]">
         <Reveal>
-          <h3 className="font-display text-[24px] leading-snug text-ink">
+          {photo && (
+            <div className="relative aspect-[4/5] w-full max-w-[220px] overflow-hidden rounded-[14px]">
+              <Image
+                src={photo}
+                alt={name}
+                fill
+                sizes="220px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
+          <h3 className="mt-5 font-display text-[24px] leading-snug text-ink">
             {name}
           </h3>
           <p className="mt-1 text-[13px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">

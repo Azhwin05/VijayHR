@@ -96,6 +96,7 @@ export default function AboutPage() {
         title="Our Leadership"
         name="Vijay Kumar E"
         role="Managing Director"
+        photo="/brand/vijay-kumar-e.webp"
         bio={[
           "Vijay Kumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
           "His expertise encompasses Labour & Employment Law, Statutory Compliance, Payroll Compliance, Industrial Relations, HR Advisory, Compliance Audits, POSH Compliance, Contract Labour, and Regulatory Consulting. Over the years, he has worked closely with organizations across diverse industries, helping them strengthen their compliance frameworks, manage regulatory risks, and improve HR practices.",
