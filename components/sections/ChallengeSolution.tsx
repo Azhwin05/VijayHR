@@ -25,21 +25,25 @@ export default function ChallengeSolution({
         />
 
         <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {/* The problem — deliberately flat and colourless */}
-          <div className="rounded-[12px] border border-black/[0.06] p-8 sm:p-9">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-ink">
+          <div
+            className="rounded-[12px] p-8 sm:p-9"
+            style={{ backgroundColor: "var(--paper)", border: "1px solid rgba(var(--accent-rgb),0.16)" }}
+          >
+            <p
+              className="text-[11px] font-semibold uppercase tracking-[0.18em]"
+              style={{ color: "var(--accent)" }}
+            >
               The Challenge
             </p>
             <div className="mt-7 flex flex-col gap-5">
               {challenges.map((c, i) => (
                 <Reveal key={c} delay={i * 0.04}>
-                  <p className="text-[15px] leading-relaxed text-ink/55">{c}</p>
+                  <p className="text-[15px] leading-relaxed text-ink">{c}</p>
                 </Reveal>
               ))}
             </div>
           </div>
 
-          {/* The answer — carries the brand colour */}
           <div
             className="rounded-[12px] p-8 sm:p-9"
             style={{ backgroundColor: "var(--paper)", border: "1px solid rgba(var(--accent-rgb),0.16)" }}
