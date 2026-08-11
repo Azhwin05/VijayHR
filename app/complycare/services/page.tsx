@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import TextLink from "@/components/ui/TextLink";
 import CtaBand from "@/components/sections/CtaBand";
+import ServiceRows from "@/components/sections/ServiceRows";
 import { complycareServices } from "@/lib/data/complycare-services";
+
+const IMAGES: Record<string, string> = {
+  "labour-law": "/services/labour-law-v2.webp",
+  audits: "/services/audits-v2.webp",
+  advisory: "/services/advisory-v2.webp",
+  systems: "/services/systems-v2.webp",
+  representation: "/services/representation-v2.webp",
+  training: "/services/training-v2.webp",
+  factory: "/services/factory-v2.webp",
+  "multi-sector": "/services/multi-sector-v2.webp",
+  ehs: "/services/ehs-v2.webp",
+  vendor: "/services/vendor-v2.webp",
+  posh: "/services/posh-v2.webp",
+  payroll: "/services/payroll-v2.webp",
+};
 
 export const metadata: Metadata = {
   title: "Services — VijayHR ComplyCare",
@@ -52,26 +67,14 @@ export default function ServicesIndex() {
       </section>
 
       <section className="mx-auto max-w-[1280px] px-6 py-16 sm:px-10">
-        <div className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          {orderedServices.map((s, i) => (
-            <Reveal key={s.slug} delay={(i % 3) * 0.05}>
-              <span className="font-display text-[13px] text-muted">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-3 font-display text-[18px] text-ink">
-                {s.name}
-              </h3>
-              <p className="mt-2 text-[14px] leading-relaxed text-muted">
-                {s.tagline}
-              </p>
-              <div className="mt-4">
-                <TextLink href={`/complycare/services/${s.slug}`}>
-                  Learn more →
-                </TextLink>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <ServiceRows
+          items={orderedServices.map((s) => ({
+            name: s.name,
+            tagline: s.tagline,
+            href: `/complycare/services/${s.slug}`,
+            image: IMAGES[s.slug],
+          }))}
+        />
       </section>
 
       <CtaBand
