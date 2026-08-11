@@ -27,7 +27,7 @@ export default function ChallengeSolution({
         <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* The problem — deliberately flat and colourless */}
           <div className="rounded-[12px] border border-black/[0.06] p-8 sm:p-9">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/40">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-ink">
               The Challenge
             </p>
             <div className="mt-7 flex flex-col gap-5">
