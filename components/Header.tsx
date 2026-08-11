@@ -24,6 +24,7 @@ export default function Header({
   nav: NavItem[];
 }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const activeItem = nav.find((item) => item.href === openMenu && item.mega);
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md">
@@ -51,13 +52,14 @@ export default function Header({
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-9 sm:flex">
+        <nav
+          className="relative hidden items-center gap-9 sm:flex"
+          onMouseLeave={() => setOpenMenu(null)}
+        >
           {nav.map((item) => (
             <div
               key={item.href}
-              className="relative"
               onMouseEnter={() => item.mega && setOpenMenu(item.href)}
-              onMouseLeave={() => item.mega && setOpenMenu(null)}
             >
               <Link
                 href={item.href}
@@ -81,48 +83,48 @@ export default function Header({
                   </svg>
                 )}
               </Link>
-
-              {item.mega && openMenu === item.href && (
-                <div className="absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-4">
-                  <div
-                    className="rounded-[16px] border border-black/[0.06] p-6 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.25)]"
-                    style={{ backgroundColor: "var(--paper)" }}
-                  >
-                    <Link
-                      href={item.mega.exploreHref}
-                      className="mb-5 flex items-center gap-1.5 text-[14px] font-semibold text-ink hover:text-[var(--accent)]"
-                    >
-                      {item.mega.exploreLabel}
-                      <span aria-hidden>→</span>
-                    </Link>
-                    <div className="grid grid-cols-2 gap-3">
-                      {item.mega.items.map((mi) => (
-                        <Link
-                          key={mi.href}
-                          href={mi.href}
-                          className="group flex items-center gap-3 rounded-[10px] border border-black/[0.06] px-4 py-3.5 transition-colors duration-200 hover:border-[var(--accent)]"
-                        >
-                          <span
-                            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
-                            style={{ backgroundColor: "var(--tint-1)" }}
-                          >
-                            <Icon
-                              name={mi.icon}
-                              className="h-[18px] w-[18px]"
-                              style={{ color: "var(--accent)" }}
-                            />
-                          </span>
-                          <span className="text-[13.5px] font-medium leading-snug text-ink">
-                            {mi.name}
-                          </span>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           ))}
+
+          {activeItem?.mega && (
+            <div className="absolute right-0 top-full z-50 w-[720px] pt-4">
+              <div
+                className="rounded-[16px] border border-black/[0.06] p-6 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.25)]"
+                style={{ backgroundColor: "var(--paper)" }}
+              >
+                <Link
+                  href={activeItem.mega.exploreHref}
+                  className="mb-5 flex items-center gap-1.5 text-[14px] font-semibold text-ink hover:text-[var(--accent)]"
+                >
+                  {activeItem.mega.exploreLabel}
+                  <span aria-hidden>→</span>
+                </Link>
+                <div className="grid grid-cols-4 gap-3">
+                  {activeItem.mega.items.map((mi) => (
+                    <Link
+                      key={mi.href}
+                      href={mi.href}
+                      className="group flex flex-col items-start gap-2.5 rounded-[10px] border border-black/[0.06] px-3.5 py-4 transition-colors duration-200 hover:border-[var(--accent)]"
+                    >
+                      <span
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                        style={{ backgroundColor: "var(--tint-1)" }}
+                      >
+                        <Icon
+                          name={mi.icon}
+                          className="h-4 w-4"
+                          style={{ color: "var(--accent)" }}
+                        />
+                      </span>
+                      <span className="text-[12.5px] font-medium leading-snug text-ink">
+                        {mi.name}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </nav>
 
         <Link
