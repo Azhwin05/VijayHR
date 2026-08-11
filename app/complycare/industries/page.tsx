@@ -42,20 +42,6 @@ export default function IndustriesPage() {
           { name: "Hospitality & Catering", challenge: "Sector-specific rules, FSSAI and very high staff churn.", approach: "Catering & labour compliance, licensing and rapid onboarding documentation.", image: "/industries/hospitality.webp" },
           { name: "Mining & Plantations", challenge: "Mines Act and Plantation Labour Law with welfare obligations.", approach: "Specialist Mines & Plantation compliance, welfare records and authority liaison.", image: "/industries/mining.webp" },
         ]}
-        deliveredTitle="Delivered Wherever You Operate"
-        deliveredText="From a single Chennai factory to a multi-location national enterprise — we deliver under one engagement, one engagement manager and one monthly report."
-        bullets={[
-          "Pan-India delivery through a vetted associate network",
-          "Central supervision and quality control from Chennai",
-          "Unified reporting across all locations and entities",
-          "One engagement manager. One point of accountability.",
-        ]}
-        stats={[
-          { value: 8, label: "Industries served" },
-          { value: 40, suffix: "+", label: "Central and state laws managed" },
-          { text: "Pan-India", label: "Delivery footprint" },
-          { value: 20, suffix: "+", label: "Years of domain expertise" },
-        ]}
       />
 
       <CtaBand

@@ -42,20 +42,6 @@ export default function IndustriesPage() {
           { name: "Hospitality & Catering", challenge: "Very high churn and service-culture consistency.", approach: "Rapid onboarding, recognition systems and engagement practices that reduce churn." },
           { name: "Growing Enterprises", challenge: "Scaling people processes without a full HR department.", approach: "Embedded HR leadership and org-development frameworks that scale with you." },
         ]}
-        deliveredTitle="A Partner That Scales With You"
-        deliveredText="From a single embedded HR Business Partner to a fully managed people function — one accountable partner across your entire organisation."
-        bullets={[
-          "Smart-sourced HR leadership across every engagement tier",
-          "Central governance from the Vijay Associates Group",
-          "Unified reporting across all locations and functions",
-          "One HR partner. One point of accountability.",
-        ]}
-        stats={[
-          { value: 8, label: "Industries served" },
-          { value: 10, label: "Core HR functions" },
-          { text: "Pan-India", label: "Delivery footprint" },
-          { value: 20, suffix: "+", label: "Years of Group legacy" },
-        ]}
       />
 
       <CtaBand
