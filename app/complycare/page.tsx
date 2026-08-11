@@ -123,12 +123,12 @@ export default function ComplyCareHome() {
         title="What You Get"
         description="Six concrete outcomes our clients see when they partner with VijayHR ComplyCare."
         items={[
-          { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — accurate, 2–3 day turnaround." },
-          { title: "Lower risk", text: "Penalties, prosecutions and reputational damage avoided before they arise." },
-          { title: "Freed-up teams", text: "HR and Finance focus on people and strategy, not month-end processing." },
-          { title: "Total visibility", text: "Know your compliance and payroll status by location and entity, in real time." },
-          { title: "Inspection confidence", text: "Face any authority with complete, ready-to-present documentation." },
-          { title: "Predictable cost", text: "A transparent retainer in place of unpredictable penalty exposure." },
+          { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — accurate, 2–3 day turnaround.", icon: "clock" },
+          { title: "Lower risk", text: "Penalties, prosecutions and reputational damage avoided before they arise.", icon: "shield" },
+          { title: "Freed-up teams", text: "HR and Finance focus on people and strategy, not month-end processing.", icon: "users" },
+          { title: "Total visibility", text: "Know your compliance and payroll status by location and entity, in real time.", icon: "eye" },
+          { title: "Inspection confidence", text: "Face any authority with complete, ready-to-present documentation.", icon: "check-shield" },
+          { title: "Predictable cost", text: "A transparent retainer in place of unpredictable penalty exposure.", icon: "wallet" },
         ]}
         ctaLabel="Get Started →"
         ctaHref="/complycare/contact"

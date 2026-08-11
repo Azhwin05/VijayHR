@@ -136,12 +136,12 @@ export default function PeopleCareHome() {
         title="What You Get"
         description="Six concrete outcomes organizations see when they partner with VijayHR PeopleCare."
         items={[
-          { title: "Better retention", text: "Lower attrition and a more stable, committed workforce." },
-          { title: "Stronger leaders", text: "Supervisors and managers equipped to perform." },
-          { title: "Higher engagement", text: "Teams that are connected, motivated and productive." },
-          { title: "Faster hiring", text: "Reduced cycle time and better-fit talent." },
-          { title: "Enterprise-grade HR, lean cost", text: "Senior expertise without a full HR department." },
-          { title: "Total visibility", text: "Engagement and people metrics, tracked in real time." },
+          { title: "Better retention", text: "Lower attrition and a more stable, committed workforce.", icon: "heart" },
+          { title: "Stronger leaders", text: "Supervisors and managers equipped to perform.", icon: "star" },
+          { title: "Higher engagement", text: "Teams that are connected, motivated and productive.", icon: "pulse" },
+          { title: "Faster hiring", text: "Reduced cycle time and better-fit talent.", icon: "bolt" },
+          { title: "Enterprise-grade HR, lean cost", text: "Senior expertise without a full HR department.", icon: "briefcase" },
+          { title: "Total visibility", text: "Engagement and people metrics, tracked in real time.", icon: "eye" },
         ]}
         ctaLabel="Get Started →"
         ctaHref="/peoplecare/contact"
