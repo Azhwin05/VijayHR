@@ -23,7 +23,7 @@ export default function AboutPage() {
         <Reveal delay={0.06}>
           <h1 className="mt-4 max-w-none font-display text-[40px] leading-tight text-ink sm:whitespace-nowrap sm:text-[52px]">
             Compliance-First{" "}
-            <span className="editorial italic text-ink/45">Since 2002</span>
+            <span className="font-normal text-ink/35">Since 2002</span>
           </h1>
         </Reveal>
         <Reveal delay={0.12}>
