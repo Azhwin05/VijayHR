@@ -21,7 +21,7 @@ export default function AboutPage() {
           </span>
         </Reveal>
         <Reveal delay={0.06}>
-          <h1 className="mt-4 max-w-2xl font-display text-[40px] leading-tight text-ink sm:text-[52px]">
+          <h1 className="mt-4 max-w-none font-display text-[40px] leading-tight text-ink sm:whitespace-nowrap sm:text-[52px]">
             Compliance-First. Since 2002.
           </h1>
         </Reveal>
