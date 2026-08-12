@@ -1,14 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 import SectionIntro from "@/components/sections/SectionIntro";
 import Reveal from "@/components/Reveal";
-import TextLink from "@/components/ui/TextLink";
 
-type Item = { name: string; tagline: string; href: string; image?: string };
+type Item = { name: string; tagline?: string; href: string; image?: string };
 
-// Rotating tint surfaces — all drawn from the active brand family, so a
-// section reads as one colour world rather than a patchwork. Only used
-// for items with no photo; image cards get a plain paper card instead
-// so the photo itself carries the colour.
 const TINTS = ["var(--tint-1)", "var(--tint-2)", "var(--paper)", "var(--tint-3)"];
 
 export default function ServicesGrid({
@@ -23,50 +19,52 @@ export default function ServicesGrid({
   items: Item[];
 }) {
   return (
-    <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
+    <section className="mx-auto max-w-[1280px] px-6 py-20 sm:px-10 sm:py-24">
       <SectionIntro eyebrow={eyebrow} title={title} description={description} />
 
-      <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((item, i) => (
-          <Reveal
-            key={item.href}
-            delay={(i % 3) * 0.06}
-            className={`group flex flex-col overflow-hidden rounded-[10px] border border-black/[0.06] transition-all duration-300 hover:-translate-y-[3px] hover:border-black/[0.1] hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.14)] ${
-              // gentle vertical stagger on wide screens — breaks the grid lockstep
-              i % 3 === 1 ? "lg:mt-8" : i % 3 === 2 ? "lg:mt-16" : ""
-            }`}
-            style={{ backgroundColor: item.image ? "var(--paper)" : TINTS[i % TINTS.length] }}
-          >
-            {item.image && (
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+      <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {items.map((item, i) =>
+          item.image ? (
+            <Reveal
+              key={item.href}
+              delay={(i % 6) * 0.04}
+              className="group relative aspect-[3/4] overflow-hidden rounded-[10px]"
+            >
+              <Link href={item.href}>
                 <Image
                   src={item.image}
                   alt=""
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                 />
-              </div>
-            )}
-
-            <div className="flex flex-1 flex-col p-7">
-              {!item.image && (
-                <span className="editorial text-[26px] leading-none text-ink/25">
-                  {String(i + 1).padStart(2, "0")}
+                <div
+                  aria-hidden
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(180deg, rgba(8,8,7,0) 45%, rgba(8,8,7,0.75) 100%)",
+                  }}
+                />
+                <span className="absolute inset-x-0 bottom-0 p-3 text-[12.5px] font-semibold leading-snug text-white">
+                  {item.name}
                 </span>
-              )}
-              <h3 className={item.image ? "text-[19px] leading-snug text-ink" : "mt-5 text-[19px] leading-snug text-ink"}>
+              </Link>
+            </Reveal>
+          ) : (
+            <Reveal
+              key={item.href}
+              delay={(i % 6) * 0.04}
+              className="relative flex aspect-[3/4] flex-col justify-end rounded-[10px] p-3"
+              style={{ backgroundColor: TINTS[i % TINTS.length] }}
+            >
+              <Link href={item.href} className="absolute inset-0" aria-label={item.name} />
+              <span className="pointer-events-none text-[12.5px] font-semibold leading-snug text-ink">
                 {item.name}
-              </h3>
-              <p className="mt-3 flex-1 text-[14px] leading-relaxed text-ink/60">
-                {item.tagline}
-              </p>
-              <div className="mt-6">
-                <TextLink href={item.href}>Learn more →</TextLink>
-              </div>
-            </div>
-          </Reveal>
-        ))}
+              </span>
+            </Reveal>
+          )
+        )}
       </div>
     </section>
   );
