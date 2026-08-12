@@ -35,18 +35,18 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-[1280px] px-6 py-16 sm:px-10">
+      <section className="mx-auto max-w-[1280px] px-6 py-16 text-center sm:px-10">
         <Reveal>
           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Who We Are
           </span>
         </Reveal>
         <Reveal delay={0.06}>
-          <h2 className="mt-4 max-w-xl font-display text-[30px] leading-tight text-ink sm:text-[36px]">
+          <h2 className="mx-auto mt-4 max-w-xl font-display text-[30px] leading-tight text-ink sm:text-[36px]">
             India&rsquo;s Accountable Compliance Partner
           </h2>
         </Reveal>
-        <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
           <Reveal delay={0.1}>
             <p className="text-[15px] leading-relaxed text-ink/80">
               VijayHR ComplyCare Private Limited is a Pan-India payroll and
