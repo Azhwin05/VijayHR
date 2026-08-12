@@ -95,13 +95,27 @@ export default function AboutPage() {
       <Leadership
         eyebrow="Leadership"
         title="Our Leadership"
-        name="Vijay Kumar E"
-        role="Managing Director"
-        photo="/brand/vijay-kumar-e.webp"
-        bio={[
-          "Vijay Kumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
-          "His expertise encompasses Labour & Employment Law, Statutory Compliance, Payroll Compliance, Industrial Relations, HR Advisory, Compliance Audits, POSH Compliance, Contract Labour, and Regulatory Consulting. Over the years, he has worked closely with organizations across diverse industries, helping them strengthen their compliance frameworks, manage regulatory risks, and improve HR practices.",
-          "With a strong understanding of both business and regulatory requirements, he focuses on delivering practical, reliable, and customized solutions that enable organizations to remain compliant while supporting sustainable business growth.",
+        leaders={[
+          {
+            name: "Vijay Kumar E",
+            role: "Managing Director",
+            photo: "/brand/vijay-kumar-e.webp",
+            bio: [
+              "Vijay Kumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
+              "His expertise encompasses Labour & Employment Law, Statutory Compliance, Payroll Compliance, Industrial Relations, HR Advisory, Compliance Audits, POSH Compliance, Contract Labour, and Regulatory Consulting. Over the years, he has worked closely with organizations across diverse industries, helping them strengthen their compliance frameworks, manage regulatory risks, and improve HR practices.",
+              "With a strong understanding of both business and regulatory requirements, he focuses on delivering practical, reliable, and customized solutions that enable organizations to remain compliant while supporting sustainable business growth.",
+            ],
+          },
+          {
+            name: "C.S. Indu",
+            role: "General Manager",
+            photo: "/brand/cs-indu.webp",
+            bio: [
+              "C.S. Indu brings extensive experience in HR Operations, Labour Law and Statutory Compliance, with a professional career spanning several organizations and functions. She has been associated with Vijay Associates Management Consultants since 2011, where she currently handles compliance-related work for multiple client organizations.",
+              "Her expertise includes EPF & ESI Compliance, Shops & Establishments Compliance, Professional Tax, Labour Welfare Fund, statutory registers, returns, employee claims and client coordination. She works closely with clients to ensure timely completion of compliance requirements and resolution of statutory matters.",
+              "With her strong practical knowledge and hands-on experience, she plays an important role in supporting our clients with accurate, timely and reliable compliance management.",
+            ],
+          },
         ]}
         philosophyLabel="Our Leadership Philosophy"
         philosophy="Building compliant workplaces that enable businesses and people to grow with confidence."
