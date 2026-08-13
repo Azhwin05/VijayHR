@@ -28,44 +28,54 @@ export default function Leadership({
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
       <SectionIntro eyebrow={eyebrow} title={title} description={description} />
 
-      <div className="mt-16 grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-16">
-        {leaders.map((leader, li) => (
-          <div
-            key={leader.name}
-            className={li > 0 ? "lg:border-l lg:border-black/[0.08] lg:pl-16" : ""}
-          >
-            <Reveal>
-              {leader.photo && (
-                <div className="relative aspect-[4/5] w-full max-w-[200px] overflow-hidden rounded-[14px]">
-                  <Image
-                    src={leader.photo}
-                    alt={leader.name}
-                    fill
-                    sizes="200px"
-                    className="object-cover"
-                    priority={li === 0}
-                  />
-                </div>
-              )}
-              <h3 className="mt-5 font-display text-[22px] leading-snug text-ink">
-                {leader.name}
-              </h3>
-              <p className="mt-1 text-[13px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                {leader.role}
-              </p>
-            </Reveal>
+      <div className="mt-16 flex flex-col gap-20">
+        {leaders.map((leader, li) => {
+          const mirrored = li % 2 === 1;
+          return (
+            <div
+              key={leader.name}
+              className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
+            >
+              <Reveal
+                className={mirrored ? "lg:order-2" : "lg:order-1"}
+              >
+                {leader.photo && (
+                  <div className="relative aspect-[4/3] w-full max-w-[420px] overflow-hidden rounded-[14px]">
+                    <Image
+                      src={leader.photo}
+                      alt={leader.name}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 420px"
+                      className="object-cover"
+                      priority={li === 0}
+                    />
+                  </div>
+                )}
+              </Reveal>
 
-            <div className="mt-6 flex flex-col gap-4">
-              {leader.bio.map((para, i) => (
-                <Reveal key={i} delay={0.06 + i * 0.05}>
-                  <p className="text-[14.5px] leading-relaxed text-ink/75">
-                    {para}
+              <div className={mirrored ? "lg:order-1" : "lg:order-2"}>
+                <Reveal>
+                  <h3 className="font-display text-[24px] leading-snug text-ink">
+                    {leader.name}
+                  </h3>
+                  <p className="mt-1 text-[13px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
+                    {leader.role}
                   </p>
                 </Reveal>
-              ))}
+
+                <div className="mt-5 flex flex-col gap-4">
+                  {leader.bio.map((para, i) => (
+                    <Reveal key={i} delay={0.06 + i * 0.05}>
+                      <p className="text-[14.5px] leading-relaxed text-ink/75">
+                        {para}
+                      </p>
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <Reveal
