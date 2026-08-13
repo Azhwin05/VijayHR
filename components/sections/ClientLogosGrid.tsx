@@ -5,7 +5,7 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
 
-const INITIAL_COUNT = 36;
+const INITIAL_COUNT = 40;
 
 export default function ClientLogosGrid({
   eyebrow,
@@ -40,7 +40,7 @@ export default function ClientLogosGrid({
         </Reveal>
       )}
 
-      <div className="mt-16 grid grid-cols-3 gap-px overflow-hidden rounded-[14px] border border-black/[0.06] bg-black/[0.06] sm:grid-cols-6">
+      <div className="mt-16 grid grid-cols-3 gap-px overflow-hidden rounded-[14px] border border-black/[0.06] bg-black/[0.06] sm:grid-cols-5">
         {visible.map((logo, i) => (
           <div
             key={logo}
