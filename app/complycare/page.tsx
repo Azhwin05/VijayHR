@@ -8,6 +8,8 @@ import IndustryCards from "@/components/sections/IndustryCards";
 import BenefitsGrid from "@/components/sections/BenefitsGrid";
 import Testimonials from "@/components/sections/Testimonials";
 import CtaBand from "@/components/sections/CtaBand";
+import LogoMarquee from "@/components/sections/LogoMarquee";
+import clientLogos from "@/lib/data/client-logos.json";
 
 export const metadata: Metadata = {
   title: "VijayHR ComplyCare — Compliance without Compromise. Payroll without Errors.",
@@ -50,6 +52,12 @@ export default function ComplyCareHome() {
         title="12 Service Verticals, One Accountable Partner"
         description="From factory compliance to payroll, audits to representation — everything your organisation needs, under one roof."
         items={services}
+      />
+
+      <LogoMarquee
+        eyebrow="Trusted By"
+        title="Organisations across manufacturing, IT, real estate and more rely on us for their compliance."
+        logos={clientLogos}
       />
 
       <WhyChoose
