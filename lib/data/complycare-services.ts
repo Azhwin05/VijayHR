@@ -116,7 +116,7 @@ export const complycareServices: ServiceDetail[] = [
   },
   {
     slug: "advisory",
-    name: "Assessments & Advisory",
+    name: "Compliance Assessment & Advisory",
     category: "Compliance Management",
     tagline: "Catch exposure early — with expert guidance on every regulatory change.",
     overview:
@@ -252,7 +252,7 @@ export const complycareServices: ServiceDetail[] = [
   },
   {
     slug: "factory",
-    name: "Factory Compliance",
+    name: "Factory Compliance & Industrial Support",
     category: "Sector & Regulatory",
     tagline: "Specialist Factories Act support for manufacturing operations.",
     overview:
@@ -320,7 +320,7 @@ export const complycareServices: ServiceDetail[] = [
   },
   {
     slug: "ehs",
-    name: "Environmental & EHS",
+    name: "Environmental, Pollution Control & EHS",
     category: "Sector & Regulatory",
     tagline: "Pollution Control consents and waste management, handled end-to-end.",
     overview:
@@ -354,7 +354,7 @@ export const complycareServices: ServiceDetail[] = [
   },
   {
     slug: "vendor",
-    name: "Vendor Compliance & Governance",
+    name: "Vendor Compliance & Third-Party Governance",
     category: "Audit & Risk",
     tagline: "Protect yourself as Principal Employer from third-party exposure.",
     overview:
@@ -418,6 +418,108 @@ export const complycareServices: ServiceDetail[] = [
       { q: "Is POSH compliance mandatory?", a: "Yes — every organisation with 10 or more employees must constitute an Internal Committee under the POSH Act, 2013." },
       { q: "Do you train our Internal Committee?", a: "Yes — we deliver mandatory awareness training for employees and specialised training for IC members." },
       { q: "Do you handle actual complaints?", a: "We support structured, confidential inquiry processes and documentation; the IC retains statutory decision-making authority." },
+    ],
+  },
+  {
+    slug: "hr-documentation",
+    name: "Employment & HR Documentation",
+    category: "People & Authorities",
+    tagline: "Appointment letters, policies and employment records — drafted right and kept current.",
+    overview:
+      "We draft and maintain the full suite of employment and HR documentation — appointment letters, offer letters, HR policies and service conditions — aligned to statutory requirements and kept current as regulations change.",
+    challenges: [
+      { title: "Outdated templates", text: "Appointment and offer letters that haven't been reviewed in years." },
+      { title: "Policy gaps", text: "HR policies silent on requirements the law now expects." },
+      { title: "Inconsistent practice", text: "Different documentation used across locations and teams." },
+      { title: "Codes transition", text: "Existing documentation not yet aligned to the new Labour Codes." },
+    ],
+    approach:
+      "A structured documentation review and drafting engagement — appointment letters, policies and service conditions brought in line with current statutory requirements, then kept current as the law evolves.",
+    included: [
+      { title: "Appointment & offer letters", text: "Drafted and standardised to statutory requirements." },
+      { title: "HR policy manuals", text: "Employee handbooks and service conditions reviewed and updated." },
+      { title: "Standing Orders", text: "Certified orders reviewed where applicable." },
+      { title: "Document standardisation", text: "Consistent templates applied across locations." },
+      { title: "Codes alignment", text: "Documentation updated for the new Labour Codes." },
+      { title: "Periodic review", text: "Documentation kept current as regulations change." },
+    ],
+    gains: [
+      { title: "Legally sound documentation", text: "Templates that hold up to scrutiny." },
+      { title: "Consistency", text: "The same standard applied everywhere." },
+      { title: "Always current", text: "Documentation that keeps pace with regulatory change." },
+    ],
+    faqs: [
+      { q: "Do you draft appointment letters?", a: "Yes — appointment letters, offer letters and related documentation, drafted to statutory requirements." },
+      { q: "Can you review our existing policies?", a: "Yes — a full policy and documentation review is part of the engagement." },
+      { q: "Do you update documentation for the new Labour Codes?", a: "Yes — we align appointment letters, policies and service conditions to the Codes as rules are notified." },
+    ],
+  },
+  {
+    slug: "statutory-benefits",
+    name: "Employee Statutory Benefits Management",
+    category: "Payroll & People Operations",
+    tagline: "PF, ESI, gratuity and maternity benefits — coverage, contributions and compliance, managed end-to-end.",
+    overview:
+      "We manage employee statutory benefits end-to-end — Provident Fund, ESI, gratuity and maternity benefit — covering registration, contribution calculation, eligibility tracking and statutory filings.",
+    challenges: [
+      { title: "Coverage errors", text: "Incorrect PF/ESI applicability leading to under- or over-contribution." },
+      { title: "Eligibility complexity", text: "Gratuity and maternity benefit eligibility rules that are easy to get wrong." },
+      { title: "Contribution accuracy", text: "Calculation errors that surface only at audit or exit." },
+      { title: "Changing thresholds", text: "Coverage thresholds shifting under the new wage definition." },
+    ],
+    approach:
+      "A dedicated statutory benefits desk — registration, contribution computation, eligibility tracking and filings — kept in sync with your payroll and compliance calendar.",
+    included: [
+      { title: "PF & ESI management", text: "Registration, contribution computation and monthly filings." },
+      { title: "Gratuity administration", text: "Eligibility tracking and computation, including for fixed-term employees." },
+      { title: "Maternity benefit", text: "Eligibility, entitlement and employer obligations managed." },
+      { title: "Contribution reconciliation", text: "Regular checks against payroll and statutory records." },
+      { title: "Exit settlements", text: "Benefit computation at separation, accurate and on time." },
+      { title: "Regulatory tracking", text: "Coverage and thresholds updated as rules change." },
+    ],
+    gains: [
+      { title: "Accurate coverage", text: "The right contribution, for the right employee, every time." },
+      { title: "No compliance gaps", text: "Registrations and filings always current." },
+      { title: "Employee confidence", text: "Benefits administered correctly and on time." },
+    ],
+    faqs: [
+      { q: "Do you handle PF and ESI registration?", a: "Yes — registration, contribution computation and ongoing filings are part of the service." },
+      { q: "Do you calculate gratuity for fixed-term employees?", a: "Yes — including revised eligibility conditions under the Code on Social Security." },
+      { q: "Is this separate from payroll?", a: "It runs alongside payroll, ensuring contributions and benefit calculations stay in sync." },
+    ],
+  },
+  {
+    slug: "compliance-management",
+    name: "Compliance Management",
+    category: "Compliance Management",
+    tagline: "One accountable partner managing your entire compliance programme, end-to-end.",
+    overview:
+      "For organisations that want a single accountable partner rather than a set of individual services, we manage the entire compliance programme — audits, filings, documentation, training and representation — under one coordinated engagement.",
+    challenges: [
+      { title: "Fragmented vendors", text: "Different consultants for audits, filings and representation, with no single owner." },
+      { title: "No single view", text: "No one accountable for the complete compliance picture." },
+      { title: "Reactive management", text: "Compliance handled issue by issue, not as a programme." },
+      { title: "Scaling complexity", text: "Growing organisations outgrowing ad hoc compliance support." },
+    ],
+    approach:
+      "A single point of accountability for your entire compliance programme — combining audits, filings, documentation, training and representation into one coordinated, managed engagement.",
+    included: [
+      { title: "Programme ownership", text: "One accountable partner across every compliance function." },
+      { title: "Coordinated delivery", text: "Audits, filings, training and representation under one desk." },
+      { title: "Governance reporting", text: "Regular reporting on programme status to leadership." },
+      { title: "Priority roadmap", text: "A structured plan covering the full compliance calendar." },
+      { title: "Escalation management", text: "A single point of contact for anything that arises." },
+      { title: "Continuous improvement", text: "The programme reviewed and refined as your organisation grows." },
+    ],
+    gains: [
+      { title: "Single accountability", text: "One partner responsible for the complete picture." },
+      { title: "Reduced complexity", text: "No more coordinating multiple vendors." },
+      { title: "Confidence at scale", text: "A compliance programme that grows with you." },
+    ],
+    faqs: [
+      { q: "How is this different from your individual services?", a: "Compliance Management bundles our services into one coordinated, single-accountability engagement rather than separate arrangements." },
+      { q: "Is this suitable for smaller organisations?", a: "It's most valuable for organisations with multi-location or multi-entity complexity, but we scope it to your size." },
+      { q: "Do we still get individual service specialists?", a: "Yes — specialist teams for each function report through a single programme owner." },
     ],
   },
 ];

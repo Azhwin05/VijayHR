@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
-type Item = { name: string; tagline: string; href: string; image: string };
+type Item = { name: string; tagline: string; href: string; image?: string };
 
 export default function ServiceRows({ items }: { items: Item[] }) {
   return (
@@ -16,13 +16,26 @@ export default function ServiceRows({ items }: { items: Item[] }) {
             }`}
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[10px] sm:w-[240px]">
-              <Image
-                src={item.image}
-                alt=""
-                fill
-                sizes="240px"
-                className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-              />
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt=""
+                  fill
+                  sizes="240px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                />
+              ) : (
+                <div
+                  className="absolute inset-0 flex items-center justify-center"
+                  style={{ backgroundColor: "var(--tint-1)" }}
+                >
+                  <span
+                    aria-hidden
+                    className="h-[3px] w-10 rounded-full"
+                    style={{ backgroundColor: "var(--accent)" }}
+                  />
+                </div>
+              )}
             </div>
 
             <div>

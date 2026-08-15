@@ -16,17 +16,17 @@ const whyContact = [
 
 const interestOptions = [
   "Labour Law & Statutory Compliance",
+  "Vendor Compliance & Third-Party Governance",
   "Compliance Audits",
-  "Assessments & Advisory",
-  "Centralised Systems & Reporting",
-  "Representation & Liaison",
-  "Compliance Training",
-  "Factory Compliance",
-  "Multi-Sector Labour Law",
-  "Environmental & EHS",
-  "Vendor Compliance & Governance",
+  "Employment & HR Documentation",
+  "Compliance Assessment & Advisory",
+  "Compliance Training & Capacity Building",
+  "Factory Compliance & Industrial Support",
   "POSH Compliance",
-  "Payroll Management",
+  "Centralised Systems & Reporting",
+  "Environmental, Pollution Control & EHS",
+  "Employee Statutory Benefits Management",
+  "Compliance Management",
   "Not sure — need guidance",
 ];
 

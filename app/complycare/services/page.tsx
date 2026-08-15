@@ -6,17 +6,14 @@ import { complycareServices } from "@/lib/data/complycare-services";
 
 const IMAGES: Record<string, string> = {
   "labour-law": "/services/labour-law-v2.webp",
+  vendor: "/services/vendor-v2.webp",
   audits: "/services/audits-v2.webp",
   advisory: "/services/advisory-v2.webp",
-  systems: "/services/systems-v2.webp",
-  representation: "/services/representation-v2.webp",
   training: "/services/training-v2.webp",
   factory: "/services/factory-v2.webp",
-  "multi-sector": "/services/multi-sector-v2.webp",
-  ehs: "/services/ehs-v2.webp",
-  vendor: "/services/vendor-v2.webp",
   posh: "/services/posh-v2.webp",
-  payroll: "/services/payroll-v2.webp",
+  systems: "/services/systems-v2.webp",
+  ehs: "/services/ehs-v2.webp",
 };
 
 export const metadata: Metadata = {
@@ -25,20 +22,19 @@ export const metadata: Metadata = {
     "12 compliance and payroll service verticals. Audit, advisory, factory, EHS and more.",
 };
 
-// Compliance-first ordering — payroll last.
 const order = [
   "labour-law",
+  "vendor",
   "audits",
+  "hr-documentation",
   "advisory",
-  "systems",
-  "representation",
   "training",
   "factory",
-  "multi-sector",
-  "ehs",
-  "vendor",
   "posh",
-  "payroll",
+  "systems",
+  "ehs",
+  "statutory-benefits",
+  "compliance-management",
 ];
 const orderedServices = order.map(
   (slug) => complycareServices.find((s) => s.slug === slug)!

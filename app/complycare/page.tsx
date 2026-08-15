@@ -16,17 +16,17 @@ export const metadata: Metadata = {
 
 const services = [
   { name: "Labour Law & Statutory Compliance", tagline: "Every applicable central and state obligation — tracked, filed and audit-ready.", href: "/complycare/services/labour-law", image: "/services/labour-law-v2.webp" },
+  { name: "Vendor Compliance & Third-Party Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
   { name: "Compliance Audits", tagline: "An independent, risk-classified view of where you truly stand.", href: "/complycare/services/audits", image: "/services/audits-v2.webp" },
-  { name: "Assessments & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory", image: "/services/advisory-v2.webp" },
-  { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems", image: "/services/systems-v2.webp" },
-  { name: "Representation & Liaison", tagline: "When an inspector or notice arrives, you're not facing it alone.", href: "/complycare/services/representation", image: "/services/representation-v2.webp" },
+  { name: "Employment & HR Documentation", tagline: "Appointment letters, policies and employment records — drafted right and kept current.", href: "/complycare/services/hr-documentation" },
+  { name: "Compliance Assessment & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory", image: "/services/advisory-v2.webp" },
   { name: "Compliance Training & Capacity Building", tagline: "Build the in-house capability your HR, Admin and Ops teams need.", href: "/complycare/services/training", image: "/services/training-v2.webp" },
-  { name: "Factory Compliance", tagline: "Specialist Factories Act support for manufacturing operations.", href: "/complycare/services/factory", image: "/services/factory-v2.webp" },
-  { name: "Multi-Sector Labour Law", tagline: "Shops, CLRA, BOCW, Mines and more — registrations through ongoing filings.", href: "/complycare/services/multi-sector", image: "/services/multi-sector-v2.webp" },
-  { name: "Environmental & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
-  { name: "Vendor Compliance & Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
+  { name: "Factory Compliance & Industrial Support", tagline: "Specialist Factories Act support for manufacturing operations.", href: "/complycare/services/factory", image: "/services/factory-v2.webp" },
   { name: "POSH Compliance", tagline: "Comprehensive workplace protection and POSH compliance — promoting a safe, respectful and compliant workplace.", href: "/complycare/services/posh", image: "/services/posh-v2.webp" },
-  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
+  { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems", image: "/services/systems-v2.webp" },
+  { name: "Environmental, Pollution Control & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
+  { name: "Employee Statutory Benefits Management", tagline: "PF, ESI, gratuity and maternity benefits — coverage, contributions and compliance, managed end-to-end.", href: "/complycare/services/statutory-benefits" },
+  { name: "Compliance Management", tagline: "One accountable partner managing your entire compliance programme, end-to-end.", href: "/complycare/services/compliance-management" },
 ];
 
 export default function ComplyCareHome() {
