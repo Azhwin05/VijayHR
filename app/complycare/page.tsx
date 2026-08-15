@@ -42,7 +42,6 @@ export default function ComplyCareHome() {
           { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Our Services", href: "/complycare/services", variant: "outline" },
         ]}
-        image="/brand/complycare-hero.webp"
       />
 
       <ServicesGrid
