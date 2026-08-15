@@ -5,15 +5,17 @@ export default function Testimonials({
   eyebrow,
   title,
   items,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
   items: { quote: string; name: string; role: string }[];
+  center?: boolean;
 }) {
   return (
     <section style={{ backgroundColor: "var(--tint-1)" }}>
       <div className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-        <SectionIntro eyebrow={eyebrow} title={title} />
+        <SectionIntro eyebrow={eyebrow} title={title} center={center} />
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {items.map((t, i) => (

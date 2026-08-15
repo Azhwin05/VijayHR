@@ -42,6 +42,7 @@ export default function ComplyCareHome() {
           { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Our Services", href: "/complycare/services", variant: "outline" },
         ]}
+        center
       />
 
       <ServicesGrid
@@ -49,12 +50,14 @@ export default function ComplyCareHome() {
         title="12 Service Verticals, One Accountable Partner"
         description="From factory compliance to payroll, audits to representation — everything your organisation needs, under one roof."
         items={services}
+        center
       />
 
       <WhyChoose
         eyebrow="Why Choose Us"
         title="The VijayHR Difference"
         description="Six reasons why enterprises trust us to own their compliance and payroll — not just advise on it."
+        center
         items={[
           { title: "Compliance-First philosophy", text: "We eliminate legal exposure before optimising anything else — ownership of the outcome, not advice from a distance." },
           { title: "Single-point ownership", text: "One accountable partner from audit to monitoring to representation. No gaps, no finger-pointing." },
@@ -91,6 +94,7 @@ export default function ComplyCareHome() {
         eyebrow="How We Work"
         title="A Four-Phase Engagement"
         description="From baseline audit to continuous monitoring — a structured journey that builds lasting compliance."
+        center
         steps={[
           { title: "Assess", text: "A thorough baseline audit establishes your current landscape, gaps and risks." },
           { title: "Align", text: "We agree corrective actions, ownership, escalation and the monitoring framework." },
@@ -103,6 +107,7 @@ export default function ComplyCareHome() {
         eyebrow="Industries"
         title="Built for Your Sector"
         description="Specialist knowledge across 8 industries — we know what applies to you."
+        center
         industries={[
           { name: "Manufacturing & Factories", image: "/industries/manufacturing.webp" },
           { name: "IT, ITeS & Technology", image: "/industries/it.webp" },
@@ -121,6 +126,7 @@ export default function ComplyCareHome() {
         eyebrow="Client Benefits"
         title="What You Get"
         description="Six concrete outcomes our clients see when they partner with VijayHR ComplyCare."
+        center
         items={[
           { title: "Accurate, on-time pay", text: "Monthly payroll with statutory deductions built in — accurate, 2–3 day turnaround.", icon: "clock" },
           { title: "Lower risk", text: "Penalties, prosecutions and reputational damage avoided before they arise.", icon: "shield" },
@@ -136,6 +142,7 @@ export default function ComplyCareHome() {
       <Testimonials
         eyebrow="Testimonials"
         title="What Clients Say"
+        center
         items={[
           { quote: "In 11 years across two factories we have not had a single statutory penalty. That is the entire story.", name: "R. Subramanian", role: "CFO · Automotive Components, Sriperumbudur" },
           { quote: "When the inspector arrived on a Tuesday morning, our consultant was in the boardroom by 9:15. That is the service standard.", name: "Priya Ramaswamy", role: "Head of HR · IT Services, Chennai" },

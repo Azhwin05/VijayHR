@@ -6,15 +6,17 @@ export default function WhyChoose({
   title,
   description,
   items,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
   description: string;
   items: { title: string; text: string }[];
+  center?: boolean;
 }) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-      <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+      <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
       <div className="mt-16 grid grid-cols-1 gap-x-14 gap-y-12 sm:grid-cols-2">
         {items.map((item, i) => (

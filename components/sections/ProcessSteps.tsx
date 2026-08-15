@@ -6,15 +6,17 @@ export default function ProcessSteps({
   title,
   description,
   steps,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
   description: string;
   steps: { title: string; text: string }[];
+  center?: boolean;
 }) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-      <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+      <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
       <div className="relative mt-16">
         {/* connecting hairline that the steps sit on */}

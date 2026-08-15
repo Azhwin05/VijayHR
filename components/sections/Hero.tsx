@@ -14,6 +14,7 @@ export default function Hero({
   ctas,
   stats,
   image,
+  center = false,
 }: {
   label: string;
   heading: string;
@@ -22,7 +23,9 @@ export default function Hero({
   ctas: Cta[];
   stats?: Stat[];
   image?: string;
+  center?: boolean;
 }) {
+  const centered = center && !image;
   return (
     <section className={`relative overflow-hidden ${image ? "lg:min-h-[620px]" : ""}`}>
       {/* soft brand wash behind the hero — the page's quiet colour ground */}
@@ -62,14 +65,14 @@ export default function Hero({
         </div>
       )}
 
-      <div className="relative z-10 mx-auto max-w-[1280px] px-6 pb-20 pt-24 sm:px-10 sm:pt-32">
+      <div className={`relative z-10 mx-auto max-w-[1280px] px-6 pb-20 pt-24 sm:px-10 sm:pt-32 ${centered ? "text-center" : ""}`}>
         <div className={image ? "lg:max-w-[480px] xl:max-w-[560px]" : ""}>
           <Reveal as="p" className="mb-7 text-[12px] font-medium uppercase tracking-[0.18em] text-muted">
             {label}
           </Reveal>
 
           <Reveal delay={0.08}>
-            <h1 className="max-w-4xl text-[40px] leading-[1.03] text-ink sm:text-[64px]">
+            <h1 className={`text-[40px] leading-[1.03] text-ink sm:text-[64px] ${centered ? "mx-auto max-w-3xl" : "max-w-4xl"}`}>
               {heading}
               <br />
               <span className="editorial italic text-ink/45">{emphasis}</span>
@@ -77,12 +80,12 @@ export default function Hero({
           </Reveal>
 
           <Reveal delay={0.16}>
-            <p className="mt-8 max-w-xl text-[17px] leading-[1.65] text-ink/65">
+            <p className={`mt-8 text-[17px] leading-[1.65] text-ink/65 ${centered ? "mx-auto max-w-xl" : "max-w-xl"}`}>
               {sub}
             </p>
           </Reveal>
 
-          <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center gap-4">
+          <Reveal delay={0.24} className={`mt-10 flex flex-wrap items-center gap-4 ${centered ? "justify-center" : ""}`}>
             {ctas.map((cta) => (
               <Button key={cta.href} href={cta.href} variant={cta.variant ?? "solid"}>
                 {cta.label}

@@ -10,6 +10,7 @@ export default function BenefitsGrid({
   items,
   ctaLabel,
   ctaHref,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
@@ -17,11 +18,12 @@ export default function BenefitsGrid({
   items: { title: string; text: string; icon?: string }[];
   ctaLabel?: string;
   ctaHref?: string;
+  center?: boolean;
 }) {
   return (
     <section style={{ backgroundColor: "var(--tint-3)" }}>
       <div className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-        <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+        <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
         <div className="mt-16 grid grid-cols-1 gap-x-12 gap-y-11 sm:grid-cols-3">
           {items.map((item, i) => (

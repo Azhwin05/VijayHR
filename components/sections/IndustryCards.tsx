@@ -12,6 +12,7 @@ export default function IndustryCards({
   industries,
   ctaLabel,
   ctaHref,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
@@ -19,10 +20,11 @@ export default function IndustryCards({
   industries: Industry[];
   ctaLabel: string;
   ctaHref: string;
+  center?: boolean;
 }) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-      <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+      <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
       <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {industries.map((ind, i) => (

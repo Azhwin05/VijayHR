@@ -12,15 +12,17 @@ export default function ServicesGrid({
   title,
   description,
   items,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
   description: string;
   items: Item[];
+  center?: boolean;
 }) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-20 sm:px-10 sm:py-24">
-      <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+      <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
       <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {items.map((item, i) =>
