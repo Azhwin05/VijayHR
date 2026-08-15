@@ -57,8 +57,8 @@ export default function GroupHome() {
             </Reveal>
 
             <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-              <TextLink href="/complycare">Compliance &amp; Payroll →</TextLink>
-              <TextLink href="/peoplecare">HR Partners on Demand →</TextLink>
+              <TextLink href="/complycare">ComplyCare →</TextLink>
+              <TextLink href="/peoplecare">PeopleCare →</TextLink>
             </Reveal>
 
             <Reveal delay={0.3} className="mx-auto mt-16 grid max-w-xl grid-cols-3 gap-8 border-t border-hairline pt-10">
