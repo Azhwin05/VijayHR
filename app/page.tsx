@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -33,49 +34,116 @@ export default function GroupHome() {
                 "radial-gradient(120% 70% at 10% 0%, #F7F1E7 0%, transparent 62%), radial-gradient(90% 60% at 92% 6%, #EFF3E8 0%, transparent 60%)",
             }}
           />
-          <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-24 sm:px-10 sm:pt-32">
-            <Reveal as="p" className="mb-7 text-[12px] font-medium uppercase tracking-[0.18em] text-ink/50">
-              Since 2002 · Chennai-Headquartered · Pan-India Delivery
-            </Reveal>
+          <div className="relative mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-14 px-6 pb-20 pt-24 sm:px-10 sm:pt-32 lg:grid-cols-[1fr_420px] lg:gap-10 xl:grid-cols-[1fr_460px]">
+            <div>
+              <Reveal as="p" className="mb-7 text-[12px] font-medium uppercase tracking-[0.18em] text-ink/50">
+                Since 2002 · Chennai-Headquartered · Pan-India Delivery
+              </Reveal>
 
-            <Reveal delay={0.08}>
-              <h1 className="max-w-4xl text-[42px] leading-[1.03] text-ink sm:text-[66px]">
-                One Group.
-                <br />
-                <span className="editorial italic text-ink/45">
-                  Two Ways We Take Care of Your Business.
-                </span>
-              </h1>
-            </Reveal>
+              <Reveal delay={0.08}>
+                <h1 className="max-w-4xl text-[42px] leading-[1.03] text-ink sm:text-[66px]">
+                  One Group.
+                  <br />
+                  <span className="editorial italic text-ink/45">
+                    Two Ways We Take Care of Your Business.
+                  </span>
+                </h1>
+              </Reveal>
 
-            <Reveal delay={0.16}>
-              <p className="mt-8 max-w-xl text-[17px] leading-[1.65] text-ink/65">
-                Vijay Associates Group brings together specialist payroll &amp;
-                compliance management and on-demand HR partnership — so you can
-                hand off the complexity and focus on growth.
-              </p>
-            </Reveal>
+              <Reveal delay={0.16}>
+                <p className="mt-8 max-w-xl text-[17px] leading-[1.65] text-ink/65">
+                  Vijay Associates Group brings together specialist payroll &amp;
+                  compliance management and on-demand HR partnership — so you can
+                  hand off the complexity and focus on growth.
+                </p>
+              </Reveal>
 
-            <Reveal delay={0.24} className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
-              <TextLink href="/complycare">Compliance &amp; Payroll →</TextLink>
-              <TextLink href="/peoplecare">HR Partners on Demand →</TextLink>
-            </Reveal>
+              <Reveal delay={0.24} className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+                <TextLink href="/complycare">Compliance &amp; Payroll →</TextLink>
+                <TextLink href="/peoplecare">HR Partners on Demand →</TextLink>
+              </Reveal>
 
-            <Reveal delay={0.3} className="mt-16 grid max-w-2xl grid-cols-3 gap-8 border-t border-hairline pt-10">
-              {[
-                { value: 20, suffix: "+", label: "Years of Legacy" },
-                { value: 500, suffix: "+", label: "Organisations Served" },
-                { value: 100, suffix: "%", label: "Audit-Ready, Always" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-[28px] font-semibold tracking-[-0.02em] text-ink sm:text-[34px]">
-                    <Counter value={stat.value} suffix={stat.suffix} />
-                  </p>
-                  <p className="mt-1 text-[12px] leading-snug text-ink/55">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
+              <Reveal delay={0.3} className="mt-16 grid max-w-2xl grid-cols-3 gap-8 border-t border-hairline pt-10">
+                {[
+                  { value: 20, suffix: "+", label: "Years of Legacy" },
+                  { value: 500, suffix: "+", label: "Organisations Served" },
+                  { value: 100, suffix: "%", label: "Audit-Ready, Always" },
+                ].map((stat) => (
+                  <div key={stat.label}>
+                    <p className="text-[28px] font-semibold tracking-[-0.02em] text-ink sm:text-[34px]">
+                      <Counter value={stat.value} suffix={stat.suffix} />
+                    </p>
+                    <p className="mt-1 text-[12px] leading-snug text-ink/55">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
+              </Reveal>
+            </div>
+
+            {/* Duality panel — no group-level photography exists, so the
+                "two ways" promise is made visual through the two brand
+                accents themselves rather than a generic stock image. */}
+            <Reveal delay={0.2} className="hidden lg:block">
+              <div className="relative overflow-hidden rounded-[20px] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.28)]">
+                <Link
+                  href="/complycare"
+                  className="group relative flex h-[220px] flex-col justify-between overflow-hidden p-7"
+                  style={{ backgroundColor: "#F9F2EF" }}
+                >
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute -right-6 -top-10 text-[150px] font-bold leading-none tracking-tighter text-[#7A2331] opacity-[0.07]"
+                  >
+                    VHR
+                  </span>
+                  <span
+                    aria-hidden
+                    className="block h-[3px] w-10 rounded-full"
+                    style={{ backgroundColor: "#7A2331" }}
+                  />
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em]" style={{ color: "#7A2331" }}>
+                      Compliance &amp; Payroll
+                    </p>
+                    <p className="mt-2 text-[22px] leading-snug text-ink">
+                      VijayHR ComplyCare
+                    </p>
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-ink/60 transition-colors group-hover:text-ink">
+                      Explore →
+                    </span>
+                  </div>
+                </Link>
+
+                <Link
+                  href="/peoplecare"
+                  className="group relative flex h-[220px] flex-col justify-between overflow-hidden p-7"
+                  style={{ backgroundColor: "#F1F4EA" }}
+                >
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute -right-6 -top-10 text-[150px] font-bold leading-none tracking-tighter text-[#4B5A34] opacity-[0.07]"
+                  >
+                    VHR
+                  </span>
+                  <span
+                    aria-hidden
+                    className="block h-[3px] w-10 rounded-full"
+                    style={{ backgroundColor: "#4B5A34" }}
+                  />
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em]" style={{ color: "#4B5A34" }}>
+                      HR Partners on Demand
+                    </p>
+                    <p className="mt-2 text-[22px] leading-snug text-ink">
+                      VijayHR PeopleCare
+                    </p>
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-ink/60 transition-colors group-hover:text-ink">
+                      Explore →
+                    </span>
+                  </div>
+                </Link>
+              </div>
             </Reveal>
           </div>
         </section>
