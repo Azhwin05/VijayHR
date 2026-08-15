@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import Counter from "@/components/Counter";
 import TextLink from "@/components/ui/TextLink";
 import CtaBand from "@/components/sections/CtaBand";
 import ClientLogosGrid from "@/components/sections/ClientLogosGrid";
@@ -59,23 +58,6 @@ export default function GroupHome() {
             <Reveal delay={0.24} className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
               <TextLink href="/complycare">ComplyCare →</TextLink>
               <TextLink href="/peoplecare">PeopleCare →</TextLink>
-            </Reveal>
-
-            <Reveal delay={0.3} className="mx-auto mt-16 grid max-w-xl grid-cols-3 gap-8 border-t border-hairline pt-10">
-              {[
-                { value: 20, suffix: "+", label: "Years of Legacy" },
-                { value: 500, suffix: "+", label: "Organisations Served" },
-                { value: 100, suffix: "%", label: "Audit-Ready, Always" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-[28px] font-semibold tracking-[-0.02em] text-ink sm:text-[34px]">
-                    <Counter value={stat.value} suffix={stat.suffix} />
-                  </p>
-                  <p className="mt-1 text-[12px] leading-snug text-ink/55">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
             </Reveal>
           </div>
         </section>
