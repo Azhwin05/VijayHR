@@ -3,6 +3,8 @@ import Reveal from "@/components/Reveal";
 import Rule from "@/components/Rule";
 import TextLink from "@/components/ui/TextLink";
 import CtaBand from "@/components/sections/CtaBand";
+import CodesAccordion from "@/components/sections/CodesAccordion";
+import ImpactTabs from "@/components/sections/ImpactTabs";
 
 export const metadata: Metadata = {
   title: "New Labour Codes — VijayHR ComplyCare",
@@ -164,31 +166,7 @@ export default function NewLabourCodesPage() {
             The Four Labour Codes
           </span>
         </Reveal>
-        <div className="mt-10 flex flex-col gap-14">
-          {codes.map((code, i) => (
-            <Reveal key={code.name} delay={i * 0.05}>
-              <h3 className="font-display text-[20px] text-ink">{code.name}</h3>
-              <p className="mt-3 max-w-2xl text-[14.5px] leading-relaxed text-muted">
-                {code.body}
-              </p>
-              <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink/45">
-                Key Areas
-              </p>
-              <ul className="mt-3 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
-                {code.areas.map((area) => (
-                  <li key={area} className="flex gap-2.5 text-[13.5px] leading-relaxed text-ink/70">
-                    <span
-                      aria-hidden
-                      className="mt-[8px] h-1 w-1 shrink-0 rounded-full"
-                      style={{ backgroundColor: "var(--accent)" }}
-                    />
-                    {area}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
-        </div>
+        <CodesAccordion codes={codes} />
       </section>
 
       {/* What this means for employers */}
@@ -204,20 +182,7 @@ export default function NewLabourCodesPage() {
               The Labour Codes are not a documentation exercise. They touch how organisations pay people, structure benefits, engage contractors and maintain records. The following areas warrant review.
             </p>
           </Reveal>
-          <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {employerImpact.map((group, i) => (
-              <Reveal key={group.title} delay={(i % 2) * 0.06}>
-                <h3 className="font-display text-[17px] text-ink">{group.title}</h3>
-                <ul className="mt-3 flex flex-col gap-2.5">
-                  {group.items.map((item) => (
-                    <li key={item} className="text-[13.5px] leading-relaxed text-ink/65">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-            ))}
-          </div>
+          <ImpactTabs groups={employerImpact} />
           <Reveal delay={0.2}>
             <p className="mt-10 max-w-2xl text-[13.5px] leading-relaxed text-ink/55">
               Multi-state employers face an additional layer of complexity. Because state rules are being notified at different times and with different procedural requirements, organisations operating across locations should assess their exposure state by state rather than assuming uniform treatment.
