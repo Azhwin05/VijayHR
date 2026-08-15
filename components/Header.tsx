@@ -17,11 +17,13 @@ export default function Header({
   tagline,
   homeHref,
   nav,
+  switchTo,
 }: {
   brand: string;
   tagline?: string;
   homeHref: string;
   nav: NavItem[];
+  switchTo?: { label: string; href: string };
 }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const activeItem = nav.find((item) => item.href === openMenu && item.mega);
@@ -127,13 +129,40 @@ export default function Header({
           )}
         </nav>
 
-        <Link
-          href="#menu"
-          className="text-[14px] font-medium text-ink sm:hidden"
-        >
-          Menu
-        </Link>
+        <div className="flex items-center gap-4">
+          {switchTo && (
+            <Link
+              href={switchTo.href}
+              className="hidden items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-colors duration-200 sm:inline-flex"
+              style={{
+                borderColor: "rgba(var(--accent-rgb), 0.28)",
+                color: "var(--accent)",
+              }}
+            >
+              {switchTo.label}
+              <span aria-hidden>→</span>
+            </Link>
+          )}
+
+          <Link
+            href="#menu"
+            className="text-[14px] font-medium text-ink sm:hidden"
+          >
+            Menu
+          </Link>
+        </div>
       </div>
+
+      {switchTo && (
+        <Link
+          href={switchTo.href}
+          className="flex items-center justify-center gap-1.5 border-t border-black/[0.06] py-2 text-[12.5px] font-medium sm:hidden"
+          style={{ color: "var(--accent)" }}
+        >
+          {switchTo.label}
+          <span aria-hidden>→</span>
+        </Link>
+      )}
     </header>
   );
 }

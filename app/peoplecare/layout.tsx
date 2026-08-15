@@ -30,6 +30,7 @@ export default function PeopleCareLayout({
         tagline="People First. Growth Always."
         homeHref="/peoplecare"
         nav={nav}
+        switchTo={{ label: "ComplyCare", href: "/complycare" }}
       />
       {children}
       <Footer

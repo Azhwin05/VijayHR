@@ -51,6 +51,7 @@ export default function ComplyCareLayout({
         tagline="Compliance First. Always."
         homeHref="/complycare"
         nav={nav}
+        switchTo={{ label: "PeopleCare", href: "/peoplecare" }}
       />
       {children}
       <Footer
