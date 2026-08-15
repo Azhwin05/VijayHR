@@ -6,7 +6,6 @@ import ChallengeSolution from "@/components/sections/ChallengeSolution";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import IndustryCards from "@/components/sections/IndustryCards";
 import BenefitsGrid from "@/components/sections/BenefitsGrid";
-import Testimonials from "@/components/sections/Testimonials";
 import CtaBand from "@/components/sections/CtaBand";
 
 export const metadata: Metadata = {
@@ -137,18 +136,6 @@ export default function ComplyCareHome() {
         ]}
         ctaLabel="Get Started →"
         ctaHref="/complycare/contact"
-      />
-
-      <Testimonials
-        eyebrow="Testimonials"
-        title="What Clients Say"
-        center
-        items={[
-          { quote: "In 11 years across two factories we have not had a single statutory penalty. That is the entire story.", name: "R. Subramanian", role: "CFO · Automotive Components, Sriperumbudur" },
-          { quote: "When the inspector arrived on a Tuesday morning, our consultant was in the boardroom by 9:15. That is the service standard.", name: "Priya Ramaswamy", role: "Head of HR · IT Services, Chennai" },
-          { quote: "They write the kind of compliance memo our audit committee actually reads. Plain English, full citations, no padding.", name: "Arvind Krishnan", role: "Company Secretary · Listed Pharma" },
-          { quote: "Payroll moved to them mid-year without a single missed cycle. Accurate, on time, every month since.", name: "Lakshmi Narayan", role: "Finance Controller · Logistics" },
-        ]}
       />
 
       <CtaBand
