@@ -25,7 +25,7 @@ const interestOptions = [
   "POSH Compliance",
   "Centralised Systems & Reporting",
   "Environmental, Pollution Control & EHS",
-  "Employee Statutory Benefits Management",
+  "Payroll Management",
   "Compliance Management",
   "Not sure — need guidance",
 ];

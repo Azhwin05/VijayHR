@@ -14,6 +14,7 @@ const IMAGES: Record<string, string> = {
   posh: "/services/posh-v2.webp",
   systems: "/services/systems-v2.webp",
   ehs: "/services/ehs-v2.webp",
+  payroll: "/services/payroll-v2.webp",
 };
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ const order = [
   "posh",
   "systems",
   "ehs",
-  "statutory-benefits",
+  "payroll",
   "compliance-management",
 ];
 const orderedServices = order.map(

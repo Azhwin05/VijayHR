@@ -26,7 +26,7 @@ const nav = [
         { name: "POSH Compliance", href: "/complycare/services/posh", icon: "shield" },
         { name: "Centralised Systems & Reporting", href: "/complycare/services/systems", icon: "server" },
         { name: "Environmental, Pollution Control & EHS", href: "/complycare/services/ehs", icon: "leaf" },
-        { name: "Employee Statutory Benefits Management", href: "/complycare/services/statutory-benefits", icon: "heart" },
+        { name: "Payroll Management", href: "/complycare/services/payroll", icon: "wallet" },
         { name: "Compliance Management", href: "/complycare/services/compliance-management", icon: "pulse" },
       ],
     },

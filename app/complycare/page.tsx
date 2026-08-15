@@ -25,7 +25,7 @@ const services = [
   { name: "POSH Compliance", tagline: "Comprehensive workplace protection and POSH compliance — promoting a safe, respectful and compliant workplace.", href: "/complycare/services/posh", image: "/services/posh-v2.webp" },
   { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems", image: "/services/systems-v2.webp" },
   { name: "Environmental, Pollution Control & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
-  { name: "Employee Statutory Benefits Management", tagline: "PF, ESI, gratuity and maternity benefits — coverage, contributions and compliance, managed end-to-end.", href: "/complycare/services/statutory-benefits" },
+  { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
   { name: "Compliance Management", tagline: "One accountable partner managing your entire compliance programme, end-to-end.", href: "/complycare/services/compliance-management" },
 ];
 
