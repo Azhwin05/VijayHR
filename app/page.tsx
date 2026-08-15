@@ -80,20 +80,27 @@ export default function GroupHome() {
           </div>
         </section>
 
+        <ClientLogosGrid
+          eyebrow="Trusted By"
+          title="Organisations That Rely On Us"
+          description="Across manufacturing, IT, real estate and more — companies trust the Vijay Associates Group for their compliance and people needs."
+          logos={clientLogos}
+        />
+
         {/* Two brands */}
-        <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
+        <section className="mx-auto max-w-[1280px] px-6 py-24 text-center sm:px-10 sm:py-28">
           <Reveal>
             <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-ink/45">
               What We Do
             </p>
           </Reveal>
           <Reveal delay={0.06}>
-            <h2 className="mt-5 max-w-xl text-[32px] leading-[1.1] text-ink sm:text-[42px]">
+            <h2 className="mx-auto mt-5 max-w-xl text-[32px] leading-[1.1] text-ink sm:text-[42px]">
               Two Focused Practices, One Accountable Group
             </h2>
           </Reveal>
 
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="mt-16 grid grid-cols-1 gap-6 text-left sm:grid-cols-2">
             {[
               {
                 accent: "#7A2331",
@@ -155,13 +162,6 @@ export default function GroupHome() {
             ))}
           </div>
         </section>
-
-        <ClientLogosGrid
-          eyebrow="Trusted By"
-          title="Organisations That Rely On Us"
-          description="Across manufacturing, IT, real estate and more — companies trust the Vijay Associates Group for their compliance and people needs."
-          logos={clientLogos}
-        />
 
         <CtaBand
           label="Get Started"

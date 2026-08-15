@@ -24,17 +24,17 @@ export default function ClientLogosGrid({
 
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-      <Reveal>
-        <Eyebrow>{eyebrow}</Eyebrow>
+      <Reveal className="text-center">
+        <Eyebrow center>{eyebrow}</Eyebrow>
       </Reveal>
-      <Reveal delay={0.06}>
-        <h2 className="mt-5 max-w-xl text-[32px] leading-[1.1] text-ink sm:text-[42px]">
+      <Reveal delay={0.06} className="text-center">
+        <h2 className="mx-auto mt-5 max-w-xl text-[32px] leading-[1.1] text-ink sm:text-[42px]">
           {title}
         </h2>
       </Reveal>
       {description && (
-        <Reveal delay={0.12}>
-          <p className="mt-4 max-w-lg text-[16px] leading-relaxed text-ink/60">
+        <Reveal delay={0.12} className="text-center">
+          <p className="mx-auto mt-4 max-w-lg text-[16px] leading-relaxed text-ink/60">
             {description}
           </p>
         </Reveal>
