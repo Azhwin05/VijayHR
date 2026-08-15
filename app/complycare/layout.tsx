@@ -31,6 +31,7 @@ const nav = [
       ],
     },
   },
+  { label: "New Labour Codes", href: "/complycare/new-labour-codes" },
   { label: "Industries", href: "/complycare/industries" },
   { label: "About", href: "/complycare/about" },
   { label: "FAQ", href: "/complycare/faq" },
@@ -63,6 +64,7 @@ export default function ComplyCareLayout({
               { label: "About", href: "/complycare/about" },
               { label: "Services", href: "/complycare/services" },
               { label: "Industries", href: "/complycare/industries" },
+              { label: "New Labour Codes", href: "/complycare/new-labour-codes" },
             ],
           },
           {
