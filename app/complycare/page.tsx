@@ -33,7 +33,6 @@ export default function ComplyCareHome() {
   return (
     <main>
       <Hero
-        label="Pan-India Compliance & Payroll Partner"
         heading="Compliance without Compromise."
         emphasis="Payroll without Errors."
         sub="End-to-end statutory compliance and accurate payroll under one accountable partner — built on 20+ years of Vijay Associates' legacy."
