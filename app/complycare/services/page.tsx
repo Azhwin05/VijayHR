@@ -15,6 +15,8 @@ const IMAGES: Record<string, string> = {
   systems: "/services/systems-v2.webp",
   ehs: "/services/ehs-v2.webp",
   payroll: "/services/payroll-v2.webp",
+  "hr-documentation": "https://res.cloudinary.com/dmhonzqrm/image/upload/v1786906947/Employee_HR_Documentation_ndsdfn.webp",
+  "compliance-management": "https://res.cloudinary.com/dmhonzqrm/image/upload/v1786906946/Compliance_Management_dslp85.webp",
 };
 
 export const metadata: Metadata = {

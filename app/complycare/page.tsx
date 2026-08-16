@@ -18,7 +18,7 @@ const services = [
   { name: "Labour Law & Statutory Compliance", tagline: "Every applicable central and state obligation — tracked, filed and audit-ready.", href: "/complycare/services/labour-law", image: "/services/labour-law-v2.webp" },
   { name: "Vendor Compliance & Third-Party Governance", tagline: "Protect yourself as Principal Employer from third-party exposure.", href: "/complycare/services/vendor", image: "/services/vendor-v2.webp" },
   { name: "Compliance Audits", tagline: "An independent, risk-classified view of where you truly stand.", href: "/complycare/services/audits", image: "/services/audits-v2.webp" },
-  { name: "Employment & HR Documentation", tagline: "Appointment letters, policies and employment records — drafted right and kept current.", href: "/complycare/services/hr-documentation" },
+  { name: "Employment & HR Documentation", tagline: "Appointment letters, policies and employment records — drafted right and kept current.", href: "/complycare/services/hr-documentation", image: "https://res.cloudinary.com/dmhonzqrm/image/upload/v1786906947/Employee_HR_Documentation_ndsdfn.webp" },
   { name: "Compliance Assessment & Advisory", tagline: "Catch exposure early — with expert guidance on every regulatory change.", href: "/complycare/services/advisory", image: "/services/advisory-v2.webp" },
   { name: "Compliance Training & Capacity Building", tagline: "Build the in-house capability your HR, Admin and Ops teams need.", href: "/complycare/services/training", image: "/services/training-v2.webp" },
   { name: "Factory Compliance & Industrial Support", tagline: "Specialist Factories Act support for manufacturing operations.", href: "/complycare/services/factory", image: "/services/factory-v2.webp" },
@@ -26,7 +26,7 @@ const services = [
   { name: "Centralised Systems & Reporting", tagline: "Real-time visibility into compliance across every statute, location and entity.", href: "/complycare/services/systems", image: "/services/systems-v2.webp" },
   { name: "Environmental, Pollution Control & EHS", tagline: "Pollution Control consents and waste management, handled end-to-end.", href: "/complycare/services/ehs", image: "/services/ehs-v2.webp" },
   { name: "Payroll Management", tagline: "Accurate, statutory-integrated payroll — paid right, paid on time, every month.", href: "/complycare/services/payroll", image: "/services/payroll-v2.webp" },
-  { name: "Compliance Management", tagline: "One accountable partner managing your entire compliance programme, end-to-end.", href: "/complycare/services/compliance-management" },
+  { name: "Compliance Management", tagline: "One accountable partner managing your entire compliance programme, end-to-end.", href: "/complycare/services/compliance-management", image: "https://res.cloudinary.com/dmhonzqrm/image/upload/v1786906946/Compliance_Management_dslp85.webp" },
 ];
 
 export default function ComplyCareHome() {
