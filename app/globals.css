@@ -18,6 +18,9 @@
 
   /* Secondary micro-accent, credentials & seals only */
   --brass: #a8763e;
+
+  /* Focus-ring color, resolved from --accent-rgb so it follows brand overrides */
+  --accent-ring: rgba(var(--accent-rgb), 0.35);
 }
 
 /* ComplyCare — oxblood, warm sand family */

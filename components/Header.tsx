@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "@/components/ui/Icon";
@@ -26,7 +26,33 @@ export default function Header({
   switchTo?: { label: string; href: string };
 }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const activeItem = nav.find((item) => item.href === openMenu && item.mega);
+  const menuButtonRef = useRef<HTMLButtonElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  const closeMobile = () => {
+    setMobileOpen(false);
+    menuButtonRef.current?.focus();
+  };
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeMobile();
+    };
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKeyDown);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mobileOpen]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md">
@@ -55,7 +81,7 @@ export default function Header({
         </Link>
 
         <nav
-          className="relative hidden items-center gap-9 sm:flex"
+          className="relative hidden items-center gap-9 lg:flex"
           onMouseLeave={() => setOpenMenu(null)}
         >
           {nav.map((item) => (
@@ -133,7 +159,7 @@ export default function Header({
           {switchTo && (
             <Link
               href={switchTo.href}
-              className="hidden items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-colors duration-200 sm:inline-flex"
+              className="hidden items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[12.5px] font-medium transition-colors duration-200 lg:inline-flex"
               style={{
                 borderColor: "rgba(var(--accent-rgb), 0.28)",
                 color: "var(--accent)",
@@ -144,24 +170,127 @@ export default function Header({
             </Link>
           )}
 
-          <Link
-            href="#menu"
-            className="text-[14px] font-medium text-ink sm:hidden"
+          <button
+            ref={menuButtonRef}
+            type="button"
+            onClick={() => setMobileOpen(true)}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
+            aria-label="Open menu"
+            className="flex h-11 w-11 items-center justify-center lg:hidden"
           >
-            Menu
-          </Link>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.8}
+              strokeLinecap="round"
+              className="h-5 w-5 text-ink"
+              aria-hidden
+            >
+              <path d="M3.5 7h17M3.5 12h17M3.5 17h17" />
+            </svg>
+          </button>
         </div>
       </div>
 
       {switchTo && (
         <Link
           href={switchTo.href}
-          className="flex items-center justify-center gap-1.5 border-t border-black/[0.06] py-2 text-[12.5px] font-medium sm:hidden"
+          className="flex items-center justify-center gap-1.5 border-t border-black/[0.06] py-2 text-[12.5px] font-medium lg:hidden"
           style={{ color: "var(--accent)" }}
         >
           {switchTo.label}
           <span aria-hidden>→</span>
         </Link>
+      )}
+
+      {mobileOpen && (
+        <div
+          id="mobile-nav"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site menu"
+          className="fixed inset-0 z-[60] flex flex-col overflow-y-auto lg:hidden"
+          style={{ backgroundColor: "var(--paper)", paddingTop: "env(safe-area-inset-top)" }}
+        >
+          <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-6 py-3.5">
+            <Link href={homeHref} className="flex items-center gap-3" onClick={closeMobile}>
+              <span className="relative h-8 w-[70px] shrink-0">
+                <Image
+                  src="/brand/vhr-mark.png"
+                  alt="VijayHR"
+                  fill
+                  sizes="70px"
+                  className="object-contain object-left"
+                />
+              </span>
+            </Link>
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={closeMobile}
+              aria-label="Close menu"
+              className="flex h-11 w-11 items-center justify-center"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.8}
+                strokeLinecap="round"
+                className="h-5 w-5 text-ink"
+                aria-hidden
+              >
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
+
+          <nav className="flex flex-col gap-1 px-6 py-4">
+            {nav.map((item) => (
+              <div key={item.href} className="border-b border-black/[0.06] py-3">
+                <Link
+                  href={item.href}
+                  onClick={closeMobile}
+                  className="block py-2 text-[17px] font-medium text-ink"
+                >
+                  {item.label}
+                </Link>
+                {item.mega && (
+                  <div className="mt-1 flex flex-col gap-1">
+                    {item.mega.items.map((mi) => (
+                      <Link
+                        key={mi.href}
+                        href={mi.href}
+                        onClick={closeMobile}
+                        className="flex items-center gap-3 py-2.5 text-[14.5px] text-ink/65"
+                      >
+                        <Icon name={mi.icon} className="h-4 w-4 shrink-0" style={{ color: "var(--accent)" }} />
+                        {mi.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {switchTo && (
+              <Link
+                href={switchTo.href}
+                onClick={closeMobile}
+                className="mt-4 flex items-center justify-center gap-1.5 rounded-full border px-4 py-3 text-[14px] font-medium"
+                style={{
+                  borderColor: "rgba(var(--accent-rgb), 0.28)",
+                  color: "var(--accent)",
+                }}
+              >
+                {switchTo.label}
+                <span aria-hidden>→</span>
+              </Link>
+            )}
+          </nav>
+        </div>
       )}
     </header>
   );

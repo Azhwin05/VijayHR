@@ -67,7 +67,7 @@ export default function ContactForm({
   }
 
   const inputClass =
-    "w-full border-0 border-b border-black/[0.12] bg-transparent py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-[var(--accent)]";
+    "w-full rounded-[4px] border-0 border-b border-black/[0.12] bg-transparent py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-[var(--accent)] focus:shadow-[0_0_0_3px_var(--accent-ring)]";
 
   return (
     <div className="rounded-[14px] border border-black/[0.07] p-8 sm:p-10" style={{ backgroundColor: "var(--tint-1)" }}>
