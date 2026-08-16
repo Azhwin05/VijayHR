@@ -54,6 +54,16 @@ export default function Header({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mobileOpen]);
 
+  useEffect(() => {
+    if (!openMenu) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenMenu(null);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [openMenu]);
+
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-3.5 sm:px-10">
@@ -88,10 +98,13 @@ export default function Header({
             <div
               key={item.href}
               onMouseEnter={() => item.mega && setOpenMenu(item.href)}
+              onFocus={() => setOpenMenu(item.mega ? item.href : null)}
             >
               <Link
                 href={item.href}
                 className="relative flex items-center gap-1 text-[14px] font-medium tracking-[-0.01em] text-ink/70 transition-colors hover:text-ink"
+                aria-expanded={item.mega ? openMenu === item.href : undefined}
+                aria-haspopup={item.mega ? "true" : undefined}
               >
                 {item.label}
                 {item.mega && (
