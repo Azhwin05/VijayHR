@@ -66,8 +66,7 @@ export default function Header({
 
   return (
     <header
-      className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md"
-      style={{ transform: "translateZ(0)" }}
+      className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_97%,transparent)]"
     >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-3.5 sm:px-10">
         <Link href={homeHref} className="flex items-center gap-3">
