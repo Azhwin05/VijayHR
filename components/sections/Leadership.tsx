@@ -39,13 +39,13 @@ export default function Leadership({
                   className={mirrored ? "lg:order-2" : "lg:order-1"}
                 >
                   {leader.photo && (
-                    <div className="relative aspect-[4/3] w-full max-w-[420px] overflow-hidden rounded-[14px]">
+                    <div className="relative aspect-[4/5] w-full max-w-[360px] overflow-hidden rounded-[14px]">
                       <Image
                         src={leader.photo}
                         alt={leader.name}
                         fill
-                        sizes="(max-width: 1024px) 100vw, 420px"
-                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 360px"
+                        className="object-cover object-top"
                         priority={li === 0}
                       />
                     </div>
