@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-24 sm:px-10 sm:pt-32">
+      <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-24 text-center sm:px-10 sm:pt-32">
         <Reveal>
           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Our Story
           </span>
         </Reveal>
         <Reveal delay={0.06}>
-          <h1 className="mt-4 max-w-none font-display text-[40px] leading-tight text-ink md:whitespace-nowrap md:text-[52px]">
+          <h1 className="mx-auto mt-4 max-w-none font-display text-[40px] leading-tight text-ink md:whitespace-nowrap md:text-[52px]">
             Compliance-First{" "}
             <span className="font-normal text-ink/35">Since 2002</span>
           </h1>
         </Reveal>
         <Reveal delay={0.12}>
-          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
+          <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
             VijayHR ComplyCare carries forward two decades of Vijay
             Associates&rsquo; unbroken track record — now as a dedicated
             payroll and labour-law compliance company.
@@ -97,11 +97,11 @@ export default function AboutPage() {
         title="Our Leadership"
         leaders={[
           {
-            name: "Vijay Kumar E",
+            name: "Vijaykumar E",
             role: "Managing Director",
             photo: "/brand/vijay-kumar-e.webp",
             bio: [
-              "Vijay Kumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
+              "Vijaykumar E. brings over 25 years of experience in HR, Labour Law, Statutory Compliance, and Management Consulting. As the Managing Director of VijayHR ComplyCare Private Limited, he leads the organization with a vision to help businesses build strong, compliant, and sustainable workplaces.",
               "His expertise encompasses Labour & Employment Law, Statutory Compliance, Payroll Compliance, Industrial Relations, HR Advisory, Compliance Audits, POSH Compliance, Contract Labour, and Regulatory Consulting. Over the years, he has worked closely with organizations across diverse industries, helping them strengthen their compliance frameworks, manage regulatory risks, and improve HR practices.",
               "With a strong understanding of both business and regulatory requirements, he focuses on delivering practical, reliable, and customized solutions that enable organizations to remain compliant while supporting sustainable business growth.",
             ],
