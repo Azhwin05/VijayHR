@@ -23,6 +23,7 @@ export default function ImpactTabs({ groups }: { groups: Group[] }) {
                 borderColor: isActive ? "var(--accent)" : "rgba(0,0,0,0.1)",
                 backgroundColor: isActive ? "var(--accent)" : "transparent",
                 color: isActive ? "var(--paper)" : "var(--ink)",
+                touchAction: "manipulation",
               }}
             >
               {group.title}
