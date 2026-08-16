@@ -65,7 +65,10 @@ export default function Header({
   }, [openMenu]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md">
+    <header
+      className="sticky top-0 z-50 border-b border-black/[0.06] bg-[color-mix(in_srgb,var(--paper)_85%,transparent)] backdrop-blur-md"
+      style={{ transform: "translateZ(0)" }}
+    >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-3.5 sm:px-10">
         <Link href={homeHref} className="flex items-center gap-3">
           <span className="relative h-8 w-[70px] shrink-0">
@@ -191,6 +194,7 @@ export default function Header({
             aria-controls="mobile-nav"
             aria-label="Open menu"
             className="flex h-11 w-11 items-center justify-center lg:hidden"
+            style={{ touchAction: "manipulation" }}
           >
             <svg
               viewBox="0 0 24 24"
@@ -198,7 +202,7 @@ export default function Header({
               stroke="currentColor"
               strokeWidth={1.8}
               strokeLinecap="round"
-              className="h-5 w-5 text-ink"
+              className="pointer-events-none h-5 w-5 text-ink"
               aria-hidden
             >
               <path d="M3.5 7h17M3.5 12h17M3.5 17h17" />
@@ -245,6 +249,7 @@ export default function Header({
               onClick={closeMobile}
               aria-label="Close menu"
               className="flex h-11 w-11 items-center justify-center"
+              style={{ touchAction: "manipulation" }}
             >
               <svg
                 viewBox="0 0 24 24"
@@ -252,7 +257,7 @@ export default function Header({
                 stroke="currentColor"
                 strokeWidth={1.8}
                 strokeLinecap="round"
-                className="h-5 w-5 text-ink"
+                className="pointer-events-none h-5 w-5 text-ink"
                 aria-hidden
               >
                 <path d="M6 6l12 12M18 6L6 18" />
