@@ -1,66 +1,73 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "VijayHR PeopleCare — HR Partners on Demand",
-  description:
-    "Flexible HR partnership — people strategy, culture and operations delivered on demand by the Vijay Associates Group.",
+  title: { absolute: "VijayHR PeopleCare — Coming Soon" },
+  description: "VijayHR PeopleCare is launching soon.",
 };
 
-const nav = [
-  { label: "Solutions", href: "/peoplecare/solutions" },
-  { label: "Industries", href: "/peoplecare/industries" },
-  { label: "About", href: "/peoplecare/about" },
-  { label: "FAQ", href: "/peoplecare/faq" },
-  { label: "Contact", href: "/peoplecare/contact" },
-];
-
 export default function PeopleCareLayout({
-  children,
+  children: _children,
 }: {
   children: React.ReactNode;
 }) {
   const year = new Date().getFullYear();
 
   return (
-    <div className="brand-peoplecare">
-      <Header
-        brand="VijayHR PeopleCare"
-        tagline="People First. Growth Always."
-        homeHref="/peoplecare"
-        nav={nav}
-        switchTo={{ label: "ComplyCare", href: "/complycare" }}
-      />
-      {children}
-      <Footer
-        brand="VijayHR PeopleCare"
-        columns={[
-          {
-            title: "Company",
-            links: [
-              { label: "About", href: "/peoplecare/about" },
-              { label: "Solutions", href: "/peoplecare/solutions" },
-              { label: "Industries", href: "/peoplecare/industries" },
-            ],
-          },
-          {
-            title: "Support",
-            links: [
-              { label: "FAQ", href: "/peoplecare/faq" },
-              { label: "Contact", href: "/peoplecare/contact" },
-            ],
-          },
-          {
-            title: "Group",
-            links: [
-              { label: "Vijay Associates Group", href: "/" },
-              { label: "VijayHR ComplyCare", href: "/complycare" },
-            ],
-          },
-        ]}
-        legalLine={`© ${year} VijayHR PeopleCare. A Division of Vijay Associates Group.`}
-      />
+    <div className="brand-peoplecare flex min-h-screen flex-col">
+      <header className="border-b border-black/[0.06]">
+        <div className="mx-auto flex max-w-[1280px] items-center px-6 py-3.5 sm:px-10">
+          <Link href="/" className="flex items-center gap-3">
+            <span className="relative h-8 w-[70px] shrink-0">
+              <Image
+                src="/brand/vhr-mark.png"
+                alt="VijayHR"
+                fill
+                sizes="70px"
+                className="object-contain object-left"
+                priority
+              />
+            </span>
+            <span className="text-[16px] font-bold tracking-[-0.03em] text-ink">
+              Vijay Associates Group
+            </span>
+          </Link>
+        </div>
+      </header>
+
+      <main className="flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
+        <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
+          VijayHR PeopleCare
+        </p>
+        <h1 className="mt-4 max-w-lg font-display text-[34px] leading-tight text-ink sm:text-[42px]">
+          Coming Soon
+        </h1>
+        <p className="mt-4 max-w-md text-[15px] leading-relaxed text-muted">
+          We&rsquo;re putting the finishing touches on VijayHR PeopleCare. In
+          the meantime, explore VijayHR ComplyCare or head back home.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+          <Link
+            href="/complycare"
+            className="text-[15px] font-medium text-ink underline decoration-black/20 underline-offset-4 hover:decoration-[var(--accent)]"
+          >
+            Explore ComplyCare →
+          </Link>
+          <Link
+            href="/"
+            className="text-[15px] font-medium text-ink underline decoration-black/20 underline-offset-4 hover:decoration-[var(--accent)]"
+          >
+            Back to Home →
+          </Link>
+        </div>
+      </main>
+
+      <footer className="border-t border-black/[0.06] px-6 py-8 text-center sm:px-10">
+        <p className="text-[13px] text-ink/45">
+          © {year} VijayHR PeopleCare. A Division of Vijay Associates Group.
+        </p>
+      </footer>
     </div>
   );
 }
