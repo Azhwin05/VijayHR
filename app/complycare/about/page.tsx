@@ -108,7 +108,7 @@ export default function AboutPage() {
           },
           {
             name: "C.S. Indu",
-            role: "General Manager",
+            role: "General Manager - Compliance",
             photo: "/brand/cs-indu.webp",
             bio: [
               "C.S. Indu brings extensive experience in HR Operations, Labour Law and Statutory Compliance, with a professional career spanning several organizations and functions. She has been associated with Vijay Associates Management Consultants since 2011, where she currently handles compliance-related work for multiple client organizations.",
