@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: { absolute: "VijayHR PeopleCare — Coming Soon" },
-  description: "VijayHR PeopleCare is launching soon.",
-};
-
-export default function PeopleCareLayout({
-  children: _children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PeopleCareComingSoon() {
   const year = new Date().getFullYear();
 
   return (

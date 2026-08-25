@@ -8,7 +8,7 @@ import CtaBand from "@/components/sections/CtaBand";
 export const metadata: Metadata = {
   title: "About — VijayHR ComplyCare",
   description:
-    "Built on 20+ years of Vijay Associates' legacy. Learn about our mission, vision, leadership and values.",
+    "Built on 24+ years of Vijay Associates' legacy. Learn about our mission, vision, leadership and values.",
 };
 
 export default function AboutPage() {
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </Reveal>
         <Reveal delay={0.12}>
           <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
-            VijayHR ComplyCare carries forward two decades of Vijay
+            VijayHR ComplyCare carries forward 24+ years of Vijay
             Associates&rsquo; unbroken track record — now as a dedicated
             payroll and labour-law compliance company.
           </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <p className="text-[15px] leading-relaxed text-ink/80">
               VijayHR ComplyCare Private Limited is a Pan-India payroll and
-              labour-law compliance partner, built on the 20+ year legacy of
+              labour-law compliance partner, built on the 24+ year legacy of
               the Vijay Associates Group. We exist to make compliance
               effortless — accurate payroll and complete statutory coverage
               under one accountable partner.
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <p className="mt-4 font-display text-[20px] leading-snug text-ink">
               To deliver accurate payroll and end-to-end statutory compliance
               with single-point ownership, technology-enabled visibility and
-              the discipline of a firm that has done this for two decades.
+              the discipline of a firm that has done this for 24+ years.
             </p>
           </Reveal>
         </div>

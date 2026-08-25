@@ -151,7 +151,7 @@ export default function GroupHome() {
           sub="Reach out and we'll route you to the right specialists — compliance, people, or both."
           actions={[
             { label: "Contact ComplyCare →", href: "/complycare/contact" },
-            { label: "Contact PeopleCare →", href: "/peoplecare/contact" },
+            { label: "Contact PeopleCare →", href: "/peoplecare" },
           ]}
         />
       </main>
@@ -170,9 +170,9 @@ export default function GroupHome() {
           {
             title: "PeopleCare",
             links: [
-              { label: "Solutions", href: "/peoplecare/solutions" },
-              { label: "About", href: "/peoplecare/about" },
-              { label: "Contact", href: "/peoplecare/contact" },
+              { label: "Solutions", href: "/peoplecare" },
+              { label: "About", href: "/peoplecare" },
+              { label: "Contact", href: "/peoplecare" },
             ],
           },
           {

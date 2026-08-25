@@ -41,7 +41,7 @@ export default function Footer({
               </span>
               {col.links.map((l) => (
                 <a
-                  key={l.href}
+                  key={`${l.label}-${l.href}`}
                   href={l.href}
                   className="text-[14px] text-ink/70 transition-colors hover:text-[var(--accent)]"
                 >

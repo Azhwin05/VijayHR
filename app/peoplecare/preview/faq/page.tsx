@@ -75,7 +75,7 @@ export default function FaqPage() {
             centres, no wait times.
           </p>
           <div className="mt-6">
-            <TextLink href="/peoplecare/contact">Talk to Our Team →</TextLink>
+            <TextLink href="/peoplecare/preview/contact">Talk to Our Team →</TextLink>
           </div>
         </div>
       </section>

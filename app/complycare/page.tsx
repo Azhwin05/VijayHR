@@ -35,7 +35,7 @@ export default function ComplyCareHome() {
       <Hero
         heading="Compliance without Compromise."
         emphasis="Payroll without Errors."
-        sub="End-to-end statutory compliance and accurate payroll under one accountable partner — built on 20+ years of Vijay Associates' legacy."
+        sub="End-to-end statutory compliance and accurate payroll under one accountable partner — built on 24+ years of Vijay Associates' legacy."
         ctas={[
           { label: "Book Assessment →", href: "/complycare/contact" },
           { label: "Our Services", href: "/complycare/services", variant: "outline" },
@@ -59,7 +59,7 @@ export default function ComplyCareHome() {
         items={[
           { title: "Compliance-First philosophy", text: "We eliminate legal exposure before optimising anything else — ownership of the outcome, not advice from a distance." },
           { title: "Single-point ownership", text: "One accountable partner from audit to monitoring to representation. No gaps, no finger-pointing." },
-          { title: "20+ years of legacy", text: "Backed by the Vijay Associates Group's uninterrupted track record since 2002." },
+          { title: "24+ years of legacy", text: "Backed by the Vijay Associates Group's uninterrupted track record since 2002." },
           { title: "Audit-ready, always", text: "Structured, documented, inspection-ready records at all times — so you face any authority prepared." },
           { title: "Technology-enabled", text: "Real-time dashboards give complete visibility across statutes, locations and entities." },
           { title: "Scalable model", text: "Single-site to multi-location, multi-entity, multi-sector — delivered Pan-India under central supervision." },

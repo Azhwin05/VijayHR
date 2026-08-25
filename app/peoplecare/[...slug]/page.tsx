@@ -6,6 +6,6 @@ export const metadata: Metadata = {
   description: "VijayHR PeopleCare is launching soon.",
 };
 
-export default function PeopleCareComingSoonPage() {
+export default function PeopleCareComingSoonCatchAll() {
   return <PeopleCareComingSoon />;
 }

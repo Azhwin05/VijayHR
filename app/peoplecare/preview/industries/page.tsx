@@ -49,8 +49,8 @@ export default function IndustriesPage() {
         title="Ready to build a stronger workforce in your sector?"
         sub="Book a consultation — we'll map the people practices that fit your operating reality."
         actions={[
-          { label: "Talk to Our Team →", href: "/peoplecare/contact" },
-          { label: "View Solutions", href: "/peoplecare/solutions" },
+          { label: "Talk to Our Team →", href: "/peoplecare/preview/contact" },
+          { label: "View Solutions", href: "/peoplecare/preview/solutions" },
         ]}
       />
     </main>

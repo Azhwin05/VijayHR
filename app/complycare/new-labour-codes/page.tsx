@@ -150,7 +150,7 @@ export default function NewLabourCodesPage() {
         </Reveal>
         <Reveal delay={0.3}>
           <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-ink/65">
-            VijayHR ComplyCare helps organisations stay informed, assess their readiness, and prepare for applicable requirements — with clarity, structure and practical guidance grounded in over 20 years of labour law and statutory compliance experience.
+            VijayHR ComplyCare helps organisations stay informed, assess their readiness, and prepare for applicable requirements — with clarity, structure and practical guidance grounded in over 24 years of labour law and statutory compliance experience.
           </p>
         </Reveal>
       </section>

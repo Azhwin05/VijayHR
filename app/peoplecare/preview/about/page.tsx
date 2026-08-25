@@ -115,7 +115,7 @@ export default function AboutPage() {
           { title: "People First", text: "People create success. We put them at the centre of every decision." },
           { title: "Growth Always", text: "When people grow, businesses grow. We build capability that compounds." },
           { title: "Ownership", text: "We own the people agenda as an extension of your leadership team." },
-          { title: "Expertise", text: "Senior HR leadership, backed by two decades of Group legacy." },
+          { title: "Expertise", text: "Senior HR leadership, backed by 24+ years of Group legacy." },
         ]}
       />
 
@@ -134,8 +134,8 @@ export default function AboutPage() {
         title="Ready to make people your competitive advantage?"
         sub="Book a consultation — no obligation, just honest advice."
         actions={[
-          { label: "Partner With Us →", href: "/peoplecare/contact" },
-          { label: "Explore Solutions", href: "/peoplecare/solutions" },
+          { label: "Partner With Us →", href: "/peoplecare/preview/contact" },
+          { label: "Explore Solutions", href: "/peoplecare/preview/solutions" },
         ]}
       />
     </main>

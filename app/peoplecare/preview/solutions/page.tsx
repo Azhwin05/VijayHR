@@ -63,7 +63,7 @@ export default function SolutionsIndex() {
                 {s.tagline}
               </p>
               <div className="mt-6">
-                <TextLink href={`/peoplecare/solutions/${s.slug}`}>
+                <TextLink href={`/peoplecare/preview/solutions/${s.slug}`}>
                   Learn more →
                 </TextLink>
               </div>
@@ -139,7 +139,7 @@ export default function SolutionsIndex() {
                 {tier.text}
               </p>
               <div className="mt-6">
-                <TextLink href="/peoplecare/contact">Find Out More →</TextLink>
+                <TextLink href="/peoplecare/preview/contact">Find Out More →</TextLink>
               </div>
             </Reveal>
           ))}
@@ -193,7 +193,7 @@ export default function SolutionsIndex() {
         label="Get Started"
         title="Not sure which model fits?"
         sub="Book a consultation. We recommend only the engagement you actually need."
-        actions={[{ label: "Find the Right Model →", href: "/peoplecare/contact" }]}
+        actions={[{ label: "Find the Right Model →", href: "/peoplecare/preview/contact" }]}
       />
     </main>
   );

@@ -13,7 +13,7 @@ export default function SolutionDetailPage({
     <main>
       <section className="mx-auto max-w-[900px] px-6 pb-16 pt-24 sm:px-10 sm:pt-32">
         <Reveal>
-          <TextLink href="/peoplecare/solutions">← All Solutions</TextLink>
+          <TextLink href="/peoplecare/preview/solutions">← All Solutions</TextLink>
         </Reveal>
         <Reveal delay={0.06}>
           <h1 className="mt-8 font-display text-[36px] leading-tight text-ink sm:text-[46px]">
@@ -91,7 +91,7 @@ export default function SolutionDetailPage({
         label="Get Started"
         title="Not sure which model fits?"
         sub="Book a consultation. We recommend only the engagement you actually need."
-        actions={[{ label: "Find the Right Model →", href: "/peoplecare/contact" }]}
+        actions={[{ label: "Find the Right Model →", href: "/peoplecare/preview/contact" }]}
       />
     </main>
   );
