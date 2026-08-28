@@ -76,7 +76,7 @@ export default function ContactPage() {
             <p>
               Phone:{" "}
               <span className="font-semibold" style={{ color: "var(--accent)" }}>
-                +91 94440 21222 / +91 97910 21222
+                +91 95665 21222 / +91 87544 21222 / +91 94440 21222
               </span>
             </p>
             <p className="mt-2">Email: vijay@vijayassociates.co.in</p>
