@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import TextLink from "@/components/ui/TextLink";
 import CtaBand from "@/components/sections/CtaBand";
 import ClientLogosGrid from "@/components/sections/ClientLogosGrid";
+import ClientTestimonials from "@/components/sections/ClientTestimonials";
 import clientLogos from "@/lib/data/client-logos.json";
 
 export default function GroupHome() {
@@ -67,6 +68,53 @@ export default function GroupHome() {
           title="Organisations That Rely On Us"
           description="Across manufacturing, IT, real estate and more — companies trust the Vijay Associates Group for their compliance and people needs."
           logos={clientLogos}
+        />
+
+        <ClientTestimonials
+          eyebrow="Client Voices"
+          title="What Our Clients Say"
+          description="Real feedback from organisations we partner with across compliance and payroll."
+          items={[
+            {
+              company: "Avira Digital",
+              pullQuote: "The service was professional, responsive, and well-coordinated throughout.",
+              paragraphs: [
+                "We opted for PF services and had an excellent experience. The service was professional, responsive, and well-coordinated throughout. We truly appreciate the excellent support and coordination extended to Avira Digital.",
+                "Wishing the team continued success and the very best for their expansion into HR Compliance Care. We look forward to continuing our association.",
+              ],
+            },
+            {
+              company: "Swami Vivekananda Rural Development Society (Single Teacher Schools)",
+              pullQuote: "Excellent service and support, along with clear guidance and timely assistance throughout our association.",
+              paragraphs: [
+                "We express our sincere appreciation for the services provided. The team has demonstrated excellent service and support, along with clear guidance on the subject and timely assistance throughout our association.",
+                "We appreciate the professionalism and commitment shown and look forward to continuing our association.",
+              ],
+            },
+            {
+              company: "Seertree Global Services Private Limited",
+              pullQuote: "Highly professional, responsive, and dependable in handling our compliance needs.",
+              paragraphs: [
+                "We have been working with the team for managing our statutory compliance requirements. They have been highly professional, responsive, and dependable in handling our compliance needs.",
+                "They provide timely guidance and updates on regulatory changes, ensuring that our statutory obligations are managed efficiently and accurately.",
+                "We appreciate their proactive approach, attention to detail, and continued support in helping us maintain smooth and compliant HR operations.",
+                "We are happy to recommend them as a reliable partner for statutory and labour law compliance services.",
+              ],
+            },
+            {
+              company: "EGUARDIAN Global Services India Limited",
+              pullQuote: "More than just a service provider — a trusted partner in our India operations.",
+              heading: "A Trusted Partner for Our India Operations",
+              paragraphs: [
+                "EGUARDIAN Global Services India Limited is a subsidiary of EGUARDIAN Lanka Private Limited, with operations across four countries in the APAC region and an active presence in more than 10 countries.",
+                "When we established our operations in India over two years ago, ensuring 100% compliance with Indian labour laws was one of our key priorities. As we were at a start-up stage at the time, navigating the complexities of local statutory and labour requirements was a significant challenge.",
+                "That was when we found Ms. Indu and her team. Their expertise and proactive support have made our journey towards legal and statutory compliance remarkably seamless.",
+                "From A to Z, the team has supported us every step of the way. Whether it is providing timely guidance, addressing compliance requirements, or helping us navigate regulatory matters, they are always accessible and responsive.",
+                "What we value most is their commitment to ensuring that we remain compliant and avoid unnecessary penalties or complications arising from missed deadlines.",
+                "They have been more than just a service provider to us—they have been a trusted partner in our India operations. We highly recommend their services to any organisation looking for reliable, responsive, and knowledgeable compliance support.",
+              ],
+            },
+          ]}
         />
 
         {/* Two brands */}
