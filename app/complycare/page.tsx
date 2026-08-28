@@ -145,6 +145,7 @@ export default function ComplyCareHome() {
         items={[
           {
             company: "Avira Digital",
+            pullQuote: "The service was professional, responsive, and well-coordinated throughout.",
             paragraphs: [
               "We opted for PF services from Vijay Associates and had an excellent experience. The service was professional, responsive, and well-coordinated throughout. We truly appreciate the excellent support and coordination extended to Avira Digital.",
               "Wishing Vijay Associates continued success and the very best for their expansion into HR Compliance Care. We look forward to continuing our association.",
@@ -152,6 +153,7 @@ export default function ComplyCareHome() {
           },
           {
             company: "Swami Vivekananda Rural Development Society (Single Teacher Schools)",
+            pullQuote: "Excellent service and support, along with clear guidance and timely assistance throughout our association.",
             paragraphs: [
               "We express our sincere appreciation for the services provided by Vijay Associates. The team has demonstrated excellent service and support, along with clear guidance on the subject and timely assistance throughout our association.",
               "We appreciate the professionalism and commitment of Vijay Associates and look forward to continuing our association.",
@@ -159,6 +161,7 @@ export default function ComplyCareHome() {
           },
           {
             company: "Seertree Global Services Private Limited",
+            pullQuote: "Highly professional, responsive, and dependable in handling our compliance needs.",
             paragraphs: [
               "We have been working with Vijay Associates for managing our statutory compliance requirements. The team has been highly professional, responsive, and dependable in handling our compliance needs.",
               "They provide timely guidance and updates on regulatory changes, ensuring that our statutory obligations are managed efficiently and accurately.",
@@ -168,6 +171,7 @@ export default function ComplyCareHome() {
           },
           {
             company: "EGUARDIAN Global Services India Limited",
+            pullQuote: "More than just a service provider — a trusted partner in our India operations.",
             heading: "A Trusted Partner for Our India Operations",
             paragraphs: [
               "EGUARDIAN Global Services India Limited is a subsidiary of EGUARDIAN Lanka Private Limited, with operations across four countries in the APAC region and an active presence in more than 10 countries.",
