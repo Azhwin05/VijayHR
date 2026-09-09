@@ -79,7 +79,7 @@ export default function ContactPage() {
                 +91 95665 21222 / +91 87544 21222 / +91 94440 21222
               </span>
             </p>
-            <p className="mt-2">Email: vijay@vijayassociates.co.in</p>
+            <p className="mt-2">Email: Info@vhrcomplycare.com</p>
             <p className="mt-2">
               Office: No. 106, Kanaga Durga Complex, 2nd Floor, Gangai Amman
               Koil Street, Vadapalani, Chennai — 600026
