@@ -1,6 +1,8 @@
 import Reveal from "@/components/Reveal";
 import Rule from "@/components/Rule";
 import TextLink from "@/components/ui/TextLink";
+import Icon from "@/components/ui/Icon";
+import { iconFor } from "@/lib/icon-for";
 import CtaBand from "@/components/sections/CtaBand";
 import type { SolutionDetail } from "@/lib/data/peoplecare-solutions";
 
@@ -51,10 +53,20 @@ export default function SolutionDetailPage({
               What&rsquo;s Included
             </span>
           </Reveal>
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-x-10 gap-y-5 sm:grid-cols-2">
             {solution.included.map((item, i) => (
-              <Reveal key={item} delay={i * 0.05}>
-                <p className="text-[15px] text-ink/80">— {item}</p>
+              <Reveal key={item} delay={i * 0.05} className="flex items-center gap-3.5">
+                <span
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
+                  style={{ backgroundColor: "var(--paper)" }}
+                >
+                  <Icon
+                    name={iconFor(item)}
+                    className="h-[18px] w-[18px]"
+                    style={{ color: "var(--accent)" }}
+                  />
+                </span>
+                <p className="text-[15px] leading-snug text-ink/80">{item}</p>
               </Reveal>
             ))}
           </div>
@@ -77,13 +89,18 @@ export default function SolutionDetailPage({
           <p className="text-[13px] font-medium uppercase tracking-[0.14em] text-muted">
             Related Solutions
           </p>
-          <div className="mt-4 flex flex-wrap gap-x-8 gap-y-2">
+          <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-2.5">
             {solution.related.map((r) => (
-              <span key={r} className="text-[14px] text-ink/70">
+              <li key={r} className="flex items-center gap-2.5 text-[14px] text-ink/70">
+                <span
+                  aria-hidden
+                  className="h-[5px] w-[5px] shrink-0 rounded-full"
+                  style={{ backgroundColor: "var(--accent)" }}
+                />
                 {r}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </Reveal>
       </section>
 

@@ -1,5 +1,7 @@
 import SectionIntro from "@/components/sections/SectionIntro";
 import Reveal from "@/components/Reveal";
+import Icon from "@/components/ui/Icon";
+import { iconFor } from "@/lib/icon-for";
 
 export default function ChallengeSolution({
   eyebrow,
@@ -7,12 +9,14 @@ export default function ChallengeSolution({
   description,
   challenges,
   solutions,
+  withIcons = false,
 }: {
   eyebrow: string;
   title: string;
   description: string;
   challenges: string[];
   solutions: string[];
+  withIcons?: boolean;
 }) {
   return (
     <section style={{ backgroundColor: "var(--tint-2)" }}>
@@ -37,9 +41,25 @@ export default function ChallengeSolution({
             </p>
             <div className="mt-7 flex flex-col gap-5">
               {challenges.map((c, i) => (
-                <Reveal key={c} delay={i * 0.04}>
-                  <p className="text-[15px] leading-relaxed text-ink">{c}</p>
-                </Reveal>
+                withIcons ? (
+                  <Reveal key={c} delay={i * 0.04} className="flex gap-3.5">
+                    <span
+                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                      style={{ backgroundColor: "var(--tint-1)" }}
+                    >
+                      <Icon
+                        name={iconFor(c, "alert")}
+                        className="h-4 w-4"
+                        style={{ color: "var(--accent)" }}
+                      />
+                    </span>
+                    <p className="pt-1 text-[15px] leading-relaxed text-ink">{c}</p>
+                  </Reveal>
+                ) : (
+                  <Reveal key={c} delay={i * 0.04}>
+                    <p className="text-[15px] leading-relaxed text-ink">{c}</p>
+                  </Reveal>
+                )
               ))}
             </div>
           </div>
@@ -56,14 +76,30 @@ export default function ChallengeSolution({
             </p>
             <div className="mt-7 flex flex-col gap-5">
               {solutions.map((s, i) => (
-                <Reveal key={s} delay={i * 0.04} className="flex gap-3">
-                  <span
-                    aria-hidden
-                    className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full"
-                    style={{ backgroundColor: "var(--accent)" }}
-                  />
-                  <p className="text-[15px] leading-relaxed text-ink">{s}</p>
-                </Reveal>
+                withIcons ? (
+                  <Reveal key={s} delay={i * 0.04} className="flex gap-3.5">
+                    <span
+                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+                      style={{ backgroundColor: "var(--tint-1)" }}
+                    >
+                      <Icon
+                        name={iconFor(s)}
+                        className="h-4 w-4"
+                        style={{ color: "var(--accent)" }}
+                      />
+                    </span>
+                    <p className="pt-1 text-[15px] leading-relaxed text-ink">{s}</p>
+                  </Reveal>
+                ) : (
+                  <Reveal key={s} delay={i * 0.04} className="flex gap-3">
+                    <span
+                      aria-hidden
+                      className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full"
+                      style={{ backgroundColor: "var(--accent)" }}
+                    />
+                    <p className="text-[15px] leading-relaxed text-ink">{s}</p>
+                  </Reveal>
+                )
               ))}
             </div>
           </div>

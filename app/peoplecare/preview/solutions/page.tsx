@@ -96,12 +96,19 @@ export default function SolutionsIndex() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.16} className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {roles.map((r) => (
-              <span key={r} className="text-[14px] text-ink/75">
-                {r}
-              </span>
-            ))}
+          <Reveal delay={0.16} className="mt-10">
+            <ul className="flex flex-wrap gap-x-8 gap-y-3">
+              {roles.map((r) => (
+                <li key={r} className="flex items-center gap-2.5 text-[14px] text-ink/75">
+                  <span
+                    aria-hidden
+                    className="h-[5px] w-[5px] shrink-0 rounded-full"
+                    style={{ backgroundColor: "var(--accent)" }}
+                  />
+                  {r}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </section>

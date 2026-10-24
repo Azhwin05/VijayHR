@@ -5,7 +5,7 @@ import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyChoose from "@/components/sections/WhyChoose";
 import ChallengeSolution from "@/components/sections/ChallengeSolution";
 import ProcessSteps from "@/components/sections/ProcessSteps";
-import IndustriesTeaser from "@/components/sections/IndustriesTeaser";
+import IndustryCards from "@/components/sections/IndustryCards";
 import BenefitsGrid from "@/components/sections/BenefitsGrid";
 import Ecosystem from "@/components/sections/Ecosystem";
 import CtaBand from "@/components/sections/CtaBand";
@@ -83,6 +83,7 @@ export default function PeopleCareHome() {
         eyebrow="Challenges"
         title="The Problem We Solve"
         description="Every people challenge below has a structured, accountable solution."
+        withIcons
         challenges={[
           "High attrition and the constant cost of re-hiring.",
           "Supervisors and managers promoted without being developed.",
@@ -113,19 +114,20 @@ export default function PeopleCareHome() {
         ]}
       />
 
-      <IndustriesTeaser
+      <IndustryCards
         eyebrow="Industries"
         title="Built for Your Sector"
         description="People practices tuned to your operating reality — with deep, specialised support for manufacturing."
+        center
         industries={[
-          "Manufacturing & Factories",
-          "IT/ITeS & Technology",
-          "Construction & Real Estate",
-          "Logistics & Warehousing",
-          "Retail & Multi-location",
-          "BFSI & Professional Services",
-          "Hospitality & Catering",
-          "Growing Enterprises",
+          { name: "Manufacturing & Factories", image: "/industries/manufacturing.webp" },
+          { name: "IT/ITeS & Technology", image: "/industries/it.webp" },
+          { name: "Construction & Real Estate", image: "/industries/construction.webp" },
+          { name: "Logistics & Warehousing", image: "/industries/logistics.webp" },
+          { name: "Retail & Multi-location", image: "/industries/retail.webp" },
+          { name: "BFSI & Professional Services", image: "/industries/bfsi.webp" },
+          { name: "Hospitality & Catering", image: "/industries/hospitality.webp" },
+          { name: "Growing Enterprises", image: "/industries/bfsi.webp" },
         ]}
         ctaLabel="View All Industries"
         ctaHref="/peoplecare/preview/industries"

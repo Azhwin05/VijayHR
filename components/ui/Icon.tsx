@@ -101,6 +101,12 @@ const PATHS: Record<string, React.ReactNode> = {
       <path d="M5.2 19.5C6 13 10 8.5 17 6.5" />
     </>
   ),
+  alert: (
+    <>
+      <path d="M12 4 3 19.5h18L12 4Z" />
+      <path d="M12 10v4M12 17h.01" />
+    </>
+  ),
   truck: (
     <>
       <rect x="2.5" y="7" width="11" height="9" rx="1" />
