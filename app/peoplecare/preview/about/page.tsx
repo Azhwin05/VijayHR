@@ -13,33 +13,33 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-24 sm:px-10 sm:pt-32">
+      <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-24 text-center sm:px-10 sm:pt-32">
         <Reveal>
           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             About Us
           </span>
         </Reveal>
         <Reveal delay={0.06}>
-          <h1 className="mt-4 max-w-2xl font-display text-[38px] leading-tight text-ink sm:text-[50px]">
+          <h1 className="mx-auto mt-4 max-w-2xl font-display text-[38px] leading-tight text-ink sm:text-[50px]">
             We Build Great Workplaces Through People, Culture &amp; Leadership.
           </h1>
         </Reveal>
         <Reveal delay={0.12}>
-          <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
+          <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-muted">
             The Human Resources, Talent Development and Organizational
             Effectiveness division of Vijay Associates Group.
           </p>
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-[1280px] px-6 py-16 sm:px-10">
+      <section className="mx-auto max-w-[1280px] px-6 py-16 text-center sm:px-10">
         <Reveal>
           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Who We Are
           </span>
         </Reveal>
         <Reveal delay={0.06}>
-          <h2 className="mt-4 max-w-xl font-display text-[28px] leading-tight text-ink sm:text-[34px]">
+          <h2 className="mx-auto mt-4 max-w-xl font-display text-[28px] leading-tight text-ink sm:text-[34px]">
             An Extension of Your Leadership Team
           </h2>
         </Reveal>
@@ -67,19 +67,19 @@ export default function AboutPage() {
       </section>
 
       <section className="border-t border-black/[0.06] surface-1">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 sm:px-10">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 text-center sm:px-10">
           <Reveal>
             <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
               Our Philosophy
             </span>
           </Reveal>
           <Reveal delay={0.06}>
-            <h2 className="mt-4 max-w-xl font-display text-[28px] leading-tight text-ink">
+            <h2 className="mx-auto mt-4 max-w-xl font-display text-[28px] leading-tight text-ink">
               People First. Growth Always.
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
-            <p className="mt-5 max-w-2xl text-[16px] leading-relaxed text-ink/80">
+            <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-ink/80">
               Every successful organization is built on the strength of its
               people. Technology, infrastructure and processes support growth
               — but people create innovation, serve customers, solve problems
@@ -90,14 +90,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1280px] px-6 py-20 sm:px-10">
+      <section className="mx-auto max-w-[1280px] px-6 py-20 text-center sm:px-10">
         <Reveal>
-          <h2 className="max-w-xl font-display text-[24px] leading-tight text-ink">
+          <h2 className="mx-auto max-w-xl font-display text-[24px] leading-tight text-ink">
             HR Partners on Demand
           </h2>
         </Reveal>
         <Reveal delay={0.06}>
-          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink/80">
+          <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-relaxed text-ink/80">
             Our flagship model gives organizations access to experienced HR
             professionals and strategic HR leadership without the cost and
             complexity of a full in-house HR function. We become an
@@ -108,6 +108,8 @@ export default function AboutPage() {
       </section>
 
       <WhyChoose
+        center
+        centerItems
         eyebrow="What We Stand For"
         title="Our Values"
         description="The principles that guide every engagement and every people decision we own."
@@ -120,6 +122,7 @@ export default function AboutPage() {
       />
 
       <Ecosystem
+        center
         title="The Vijay Associates Group Ecosystem"
         text="PeopleCare handles people, culture, talent and leadership; our companion entity VijayHR ComplyCare handles payroll and statutory compliance; Vijay Associates Group can deploy optional administration and facilities support. One trusted relationship across People, Talent and Compliance."
         pillars={[

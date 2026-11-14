@@ -5,10 +5,12 @@ export default function Ecosystem({
   title,
   text,
   pillars,
+  center = false,
 }: {
   title: string;
   text: string;
   pillars: { name: string; text: string; current?: boolean }[];
+  center?: boolean;
 }) {
   return (
     <section style={{ backgroundColor: "var(--tint-2)" }}>
@@ -20,7 +22,7 @@ export default function Ecosystem({
             <Reveal
               key={p.name}
               delay={i * 0.08}
-              className="rounded-[12px] border p-8"
+              className={`rounded-[12px] border p-8 ${center ? "text-center" : ""}`}
               style={{
                 backgroundColor: p.current ? "var(--paper)" : "transparent",
                 borderColor: p.current
