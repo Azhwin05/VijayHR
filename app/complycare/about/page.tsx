@@ -46,7 +46,7 @@ export default function AboutPage() {
             India&rsquo;s Accountable Compliance Partner
           </h2>
         </Reveal>
-        <div className="mt-8 grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-8 text-center sm:grid-cols-2">
           <Reveal delay={0.1}>
             <p className="text-[15px] leading-relaxed text-ink/80">
               VijayHR ComplyCare Private Limited is a Pan-India payroll and
@@ -68,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       <section className="border-t border-black/[0.06] surface-1">
-        <div className="mx-auto max-w-[1280px] grid grid-cols-1 gap-12 px-6 py-20 sm:grid-cols-2 sm:px-10">
+        <div className="mx-auto max-w-[1280px] grid grid-cols-1 gap-12 px-6 py-20 text-center sm:grid-cols-2 sm:px-10">
           <Reveal>
             <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
               Our Vision
@@ -93,6 +93,7 @@ export default function AboutPage() {
       </section>
 
       <Leadership
+        center
         eyebrow="Leadership"
         title="Our Leadership"
         leaders={[
@@ -122,6 +123,8 @@ export default function AboutPage() {
       />
 
       <WhyChoose
+        center
+        centerItems
         eyebrow="What We Stand For"
         title="Our Values"
         description="The four principles that guide every engagement, every filing and every client relationship."
@@ -134,19 +137,19 @@ export default function AboutPage() {
       />
 
       <section className="border-t border-hairline">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 sm:px-10">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 text-center sm:px-10">
           <Reveal>
             <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
               Legal Identity
             </span>
           </Reveal>
           <Reveal delay={0.06}>
-            <h2 className="mt-4 max-w-xl font-display text-[26px] leading-tight text-ink">
+            <h2 className="mx-auto mt-4 max-w-xl font-display text-[26px] leading-tight text-ink">
               Registered Entity
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-muted">
+            <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-muted">
               VijayHR ComplyCare Private Limited is incorporated under the
               Companies Act, 2013 — giving our clients the assurance of a
               structured, accountable corporate entity.

@@ -17,6 +17,7 @@ export default function Leadership({
   leaders,
   philosophyLabel,
   philosophy,
+  center = false,
 }: {
   eyebrow: string;
   title: string;
@@ -24,22 +25,23 @@ export default function Leadership({
   leaders: Leader[];
   philosophyLabel: string;
   philosophy: string;
+  center?: boolean;
 }) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 py-24 sm:px-10 sm:py-28">
-      <SectionIntro eyebrow={eyebrow} title={title} description={description} />
+      <SectionIntro eyebrow={eyebrow} title={title} description={description} center={center} />
 
       <div className="mt-16 flex flex-col gap-20">
         {leaders.map((leader, li) => {
-          const mirrored = li % 2 === 1;
+          const mirrored = !center && li % 2 === 1;
           return (
             <Fragment key={leader.name}>
-              <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+              <div className={center ? "mx-auto flex max-w-[720px] flex-col items-center gap-8 text-center" : "grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"}>
                 <Reveal
-                  className={mirrored ? "lg:order-2" : "lg:order-1"}
+                  className={center ? "w-full" : mirrored ? "lg:order-2" : "lg:order-1"}
                 >
                   {leader.photo && (
-                    <div className="relative aspect-[4/5] w-full max-w-[360px] overflow-hidden rounded-[14px]">
+                    <div className={`relative aspect-[4/5] w-full max-w-[360px] ${center ? "mx-auto" : ""} overflow-hidden rounded-[14px]`}>
                       <Image
                         src={leader.photo}
                         alt={leader.name}
@@ -76,13 +78,13 @@ export default function Leadership({
 
               {li === 0 && (
                 <Reveal
-                  className="border-l-2 pl-6"
-                  style={{ borderColor: "var(--accent)" }}
+                  className={center ? "mx-auto max-w-[720px] text-center" : "border-l-2 pl-6"}
+                  style={center ? undefined : { borderColor: "var(--accent)" }}
                 >
                   <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
                     {philosophyLabel}
                   </p>
-                  <p className="editorial mt-3 max-w-xl text-[21px] italic leading-[1.4] text-ink">
+                  <p className={`editorial mt-3 max-w-xl text-[21px] ${center ? "mx-auto" : ""} italic leading-[1.4] text-ink`}>
                     &ldquo;{philosophy}&rdquo;
                   </p>
                 </Reveal>
