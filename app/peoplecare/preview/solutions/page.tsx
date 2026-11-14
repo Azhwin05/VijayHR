@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Rule from "@/components/Rule";
 import TextLink from "@/components/ui/TextLink";
@@ -52,7 +53,17 @@ export default function SolutionsIndex() {
       <section className="mx-auto max-w-[1280px] px-6 py-16 sm:px-10">
         <div className="grid grid-cols-1 gap-px overflow-hidden border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-3">
           {peoplecareSolutions.map((s, i) => (
-            <Reveal key={s.slug} delay={(i % 3) * 0.06} className="bg-paper p-8">
+            <Reveal key={s.slug} delay={(i % 3) * 0.06} className="bg-paper">
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src={`/solutions/${s.slug}.webp`}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8">
               <span className="font-display text-[13px] text-muted">
                 {String(i + 1).padStart(2, "0")}
               </span>
@@ -66,6 +77,7 @@ export default function SolutionsIndex() {
                 <TextLink href={`/peoplecare/preview/solutions/${s.slug}`}>
                   Learn more →
                 </TextLink>
+              </div>
               </div>
             </Reveal>
           ))}

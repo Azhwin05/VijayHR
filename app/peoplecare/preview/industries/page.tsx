@@ -40,7 +40,7 @@ export default function IndustriesPage() {
           { name: "Retail & Multi-location", challenge: "High attrition and inconsistent people practices across outlets.", approach: "Standardised onboarding, engagement and manager enablement across every location.", image: "/industries/retail.webp" },
           { name: "BFSI & Professional Services", challenge: "Performance culture and leadership-pipeline expectations.", approach: "Performance management, leadership development and succession planning at scale.", image: "/industries/bfsi.webp" },
           { name: "Hospitality & Catering", challenge: "Very high churn and service-culture consistency.", approach: "Rapid onboarding, recognition systems and engagement practices that reduce churn.", image: "/industries/hospitality.webp" },
-          { name: "Growing Enterprises", challenge: "Scaling people processes without a full HR department.", approach: "Embedded HR leadership and org-development frameworks that scale with you.", image: "/industries/bfsi.webp" },
+          { name: "Growing Enterprises", challenge: "Scaling people processes without a full HR department.", approach: "Embedded HR leadership and org-development frameworks that scale with you.", image: "/industries/growing.webp" },
         ]}
       />
 

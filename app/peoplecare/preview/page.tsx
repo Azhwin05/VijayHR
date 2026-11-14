@@ -62,7 +62,7 @@ export default function PeopleCareHome() {
         eyebrow="What We Do"
         title="10 Core HR Functions, One People Partner"
         description="From hiring to leadership development, engagement to succession — the entire employee lifecycle under one accountable partner."
-        items={solutions}
+        items={solutions.map((s) => ({ ...s, image: `/solutions/${s.href.split("/").pop()}.webp` }))}
       />
 
       <WhyChoose
@@ -127,7 +127,7 @@ export default function PeopleCareHome() {
           { name: "Retail & Multi-location", image: "/industries/retail.webp" },
           { name: "BFSI & Professional Services", image: "/industries/bfsi.webp" },
           { name: "Hospitality & Catering", image: "/industries/hospitality.webp" },
-          { name: "Growing Enterprises", image: "/industries/bfsi.webp" },
+          { name: "Growing Enterprises", image: "/industries/growing.webp" },
         ]}
         ctaLabel="View All Industries"
         ctaHref="/peoplecare/preview/industries"
