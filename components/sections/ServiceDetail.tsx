@@ -63,16 +63,9 @@ export default function ServiceDetailPage({
 
               <ul className="mt-5 flex flex-col gap-3.5">
                 {sub.processes.map((p) => (
-                  <li key={p.name} className="flex gap-3">
-                    <span
-                      aria-hidden
-                      className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full"
-                      style={{ backgroundColor: "var(--accent)" }}
-                    />
-                    <p className="text-[14px] leading-relaxed text-ink/65">
-                      <span className="font-medium text-ink">{p.name}</span>
-                      {p.text && <> — {p.text}</>}
-                    </p>
+                  <li key={p.name} className="text-[14px] leading-relaxed text-ink/65">
+                    <span className="font-medium text-ink">{p.name}</span>
+                    {p.text && <> — {p.text}</>}
                   </li>
                 ))}
               </ul>
